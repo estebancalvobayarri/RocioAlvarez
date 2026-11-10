@@ -122,16 +122,6 @@ p { margin: 0; }
 
 .logo { height: auto; width: 230px; }
 
-/* Mientras faltan los SVG del logotipo, se reserva su sitio en blanco.
-   El logotipo nunca se reescribe con otra letra. */
-.logo-missing {
-  display: inline-block;
-  width: 230px;
-  aspect-ratio: 230 / 40;
-  border: 1px dashed var(--topo);
-  border-radius: var(--r-sm);
-}
-
 /* ---------- Botones ---------- */
 
 .btn {
@@ -219,29 +209,14 @@ p { margin: 0; }
 .hero-text .lead { margin-top: var(--s3); max-width: 560px; }
 
 .hero-photo { margin: 0; }
-.hero-photo img,
-.hero-photo .photo-missing {
+.hero-photo img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: var(--r-md);
   background: var(--lino);
   border: 1px solid var(--linea);
-}
-
-/* Hueco de foto pendiente */
-.photo-missing {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: var(--s3);
-  background: var(--arena-clara);
-  color: var(--marron);
-  font-family: var(--display);
-  font-size: 22px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 /* ---------- Secciones ---------- */
@@ -285,38 +260,16 @@ p { margin: 0; }
   gap: var(--s3);
 }
 .look {
-  background: var(--lino);
-  border: 1px solid var(--linea);
+  margin: 0;
   border-radius: var(--r-md);
-  padding: 22px 22px 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  overflow: hidden;
+  border: 1px solid var(--linea);
+  background: var(--lino);
+  box-shadow: 0 1px 0 rgba(59, 47, 39, 0.04);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
-.look-title,
-.look-sign {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  width: 100%;
-}
-.look-title span:not(.rule) {
-  font-family: var(--display);
-  font-size: 24px;
-  letter-spacing: 0.1em;
-}
-.rule { flex: 1; height: 1px; background: var(--marron); }
-.look > img,
-.look > .photo-missing {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: contain;
-  margin: 14px 0;
-}
-.look > .photo-missing { border-radius: var(--r-sm); }
-.look-sign .logo,
-.look-sign .logo-missing { width: 60%; max-width: 210px; flex-shrink: 0; }
-.look .firma { margin-top: var(--s1); text-align: center; }
+.look:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -24px rgba(59, 47, 39, 0.35); }
+.look img { width: 100%; height: auto; aspect-ratio: 900 / 1085; object-fit: cover; }
 
 /* Sobre mí */
 .sobre { background: var(--arena-clara); }
@@ -341,8 +294,7 @@ p { margin: 0; }
   font-size: clamp(28px, 3vw, 36px);
   line-height: 1.15;
 }
-.sobre-nombre .logo,
-.sobre-nombre .logo-missing { width: 260px; }
+.sobre-nombre .logo { width: 260px; }
 .sobre-texto { display: flex; flex-direction: column; gap: var(--s2); justify-content: center; }
 .sobre-texto .h1 { margin-bottom: var(--s1); }
 .facts {
@@ -368,9 +320,7 @@ p { margin: 0; }
 /* Reserva */
 .reserva { background: var(--cafe); color: var(--lino); text-align: center; }
 .reserva-inner { display: flex; flex-direction: column; align-items: center; }
-.reserva .logo-big,
-.reserva .logo-missing { width: min(640px, 90%); }
-.reserva .logo-missing { border-color: var(--marron); }
+.reserva .logo-big { width: min(640px, 90%); }
 .reserva .display { margin-top: var(--s4); font-size: clamp(36px, 5vw, 56px); }
 .reserva .lead { color: var(--arena); margin-top: var(--s2); max-width: 600px; }
 .contacto-linea { color: var(--arena); margin-top: var(--s5); }
@@ -394,8 +344,7 @@ p { margin: 0; }
 }
 .footer-inner a { text-decoration: none; letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; }
 .footer-inner a:hover { color: var(--cafe); }
-.footer-inner .logo,
-.footer-inner .logo-missing { width: 200px; }
+.footer-inner .logo { width: 200px; }
 
 /* ---------- Adaptación ---------- */
 
@@ -431,7 +380,7 @@ p { margin: 0; }
 @media (max-width: 560px) {
   .wrap { padding: 0 var(--s3); }
   .section { padding: var(--s5) 0; }
-  .brand .logo, .brand .logo-missing { width: 180px; }
+  .brand .logo { width: 180px; }
   .facts { grid-template-columns: 1fr; }
   .sobre-nombre { padding: var(--s4) var(--s3); }
   .footer-inner { flex-direction: column; justify-content: center; padding: var(--s3) 0; text-align: center; }

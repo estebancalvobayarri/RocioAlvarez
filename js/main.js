@@ -18,27 +18,6 @@
     });
   }
 
-  // Huecos para archivos aún no subidos (logotipo y fotos de looks).
-  // El logotipo no se sustituye por texto: se reserva su sitio.
-  function placeholder(img) {
-    var el = document.createElement('span');
-    if (img.hasAttribute('data-logo')) {
-      el.className = 'logo-missing';
-      el.setAttribute('role', 'img');
-      el.setAttribute('aria-label', img.alt);
-    } else {
-      el.className = 'photo-missing';
-      el.textContent = img.getAttribute('data-photo') || '';
-      el.setAttribute('role', 'img');
-      el.setAttribute('aria-label', img.alt);
-    }
-    img.replaceWith(el);
-  }
-  document.querySelectorAll('img[data-logo], img[data-photo]').forEach(function (img) {
-    if (img.complete && img.naturalWidth === 0) placeholder(img);
-    else img.addEventListener('error', function () { placeholder(img); }, { once: true });
-  });
-
   // Año del pie
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();

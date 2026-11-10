@@ -7,26 +7,28 @@ Web estática de una página (HTML, CSS y un poco de JavaScript), sin dependenci
 ## Estructura
 
 ```
-index.html          Página única: portada, cómo funciona, looks, sobre mí y reserva
-css/styles.css      Estilos con los tokens del sistema de diseño
-js/main.js          Menú en móvil y huecos para archivos pendientes
-assets/logos/       Logotipo en vectores (ver más abajo)
-assets/looks/       Fotos de los montajes de looks
+index.html              Página única: portada, cómo funciona, looks, sobre mí y reserva
+css/styles.css          Estilos con los tokens del sistema de diseño
+js/main.js              Menú en móvil
+assets/logos/           Logotipo en vectores (marrón, café y blanco) y la Z
+assets/images/          Fotos originales (armario y fichas de looks)
+assets/images/web/      Las mismas fotos reducidas para la web (son las que se cargan)
 ```
 
-## Archivos que faltan por subir
+## Dónde va cada archivo
 
-Los vectores del logotipo y las fotos de los looks están en el sistema de diseño y en el manual de identidad. Hay que copiarlos con estos nombres exactos; mientras no estén, la web muestra un hueco en su lugar (el logotipo nunca se reescribe con otra letra).
-
-| Archivo | Qué es |
+| Archivo | Dónde se usa |
 |---|---|
-| `assets/logos/wordmark-marron.svg` | Logotipo principal, marrón #675749 (cabecera, looks, pie) |
-| `assets/logos/wordmark-oscuro.svg` | Logotipo en café #3B2F27 (bloque arena de «Sobre mí») |
-| `assets/logos/wordmark-blanco.svg` | Logotipo invertido #F4F1EC (bloque café de reserva) |
-| `assets/logos/monograma-z-marron.svg` | La Z sola: icono de la pestaña del navegador |
-| `assets/looks/look-01.jpg` | Look 01 |
-| `assets/looks/look-02.jpg` | Look 02 |
-| `assets/looks/look-03.jpg` | Look 03 (también en la portada) |
+| `assets/logos/logotipo-marron.svg` | Cabecera y pie |
+| `assets/logos/logotipo-cafe.svg` | Bloque arena de «Sobre mí» |
+| `assets/logos/logotipo-blanco.svg` | Bloque café de reserva |
+| `assets/logos/z-marron.svg` | Icono de la pestaña del navegador |
+| `assets/images/web/armario.jpg` | Foto de portada |
+| `assets/images/web/ficha-look-0X.jpg` | Las tres fichas de la sección Looks |
+
+Los archivos de lazo (`lazo-circulo-*.svg`) están en el repositorio pero no se usan, como se decidió.
+
+Para añadir o cambiar una foto, sube el original a `assets/images/` y una copia reducida (unos 900–1200 px de ancho) a `assets/images/web/`.
 
 ## Identidad aplicada
 
