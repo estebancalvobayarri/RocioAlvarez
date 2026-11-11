@@ -20,12 +20,14 @@ assets/images/web/      Las mismas fotos reducidas para la web (son las que se c
 | Archivo | Dónde se usa |
 |---|---|
 | `assets/logos/logotipo-lazo-lema-marron.svg` | Portada (logotipo con lazo y lema) |
-| `assets/logos/logotipo-marron.svg` | Cabecera y pie |
+| `assets/logos/logotipo-marron.svg` | Cabecera |
 | `assets/logos/logotipo-cafe.svg` | Bloque arena de «Sobre mí» |
 | `assets/logos/logotipo-lema-lino.svg` | Bloque café de reserva (logotipo con lema, en lino #F6F4F0) |
 | `assets/logos/lazo-circulo-marron.svg` | Icono de la pestaña del navegador |
 | `assets/logos/lazo-lineas-marron.svg` | Separador sobre la frase «Vale, hoy me pongo esto» |
 | `assets/iconos/icono-*.svg` | Iconos de los tres pasos de «Cómo funciona», a la derecha de cada número |
+| `assets/logos/lazo-marron.svg` · `lazo-lineas-marron.svg` | Pie: lazo (escritorio) y lazo con líneas (móvil) |
+| `assets/logos/credito-ecwebdesign.svg` | Crédito «Diseño y web» en el pie, enlazado a ecwebdesign.es |
 | `assets/images/web/armario.jpg` | Foto de portada |
 | `assets/images/web/ficha-look-0X.jpg` | Las tres fichas de la sección Looks |
 
