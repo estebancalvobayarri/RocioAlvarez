@@ -405,12 +405,6 @@ p { margin: 0; }
 .marca { background: var(--cafe); padding: var(--s6) 0; }
 .marca-inner { display: flex; flex-direction: column; align-items: center; }
 .marca .logo-big { width: min(640px, 90%); height: auto; }
-.dots { display: flex; gap: 10px; margin-top: var(--s5); }
-.dots span { height: 10px; border-radius: var(--r-pill); }
-.dots span:nth-child(1) { width: 64px; background: var(--arena); }
-.dots span:nth-child(2) { width: 40px; background: var(--topo); }
-.dots span:nth-child(3) { width: 24px; background: var(--marron); }
-.dots span:nth-child(4) { width: 14px; background: var(--lino); }
 
 /* Pie */
 .site-footer { background: var(--lino); border-top: 1px solid var(--linea); }
