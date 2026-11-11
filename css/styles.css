@@ -414,7 +414,7 @@ p { margin: 0; }
 @media (max-width: 560px) {
   .wrap { padding: 0 var(--s3); }
   .section { padding: var(--s5) 0; }
-  .brand .logo { width: 200px; }
+  .brand .logo { width: 230px; }
   .hero-text .firma { font-size: 13px; letter-spacing: 0.06em; }
   .facts { grid-template-columns: 1fr; }
   .sobre-nombre { padding: var(--s4) var(--s3); }
