@@ -323,12 +323,11 @@ p { margin: 0; }
 }
 .sobre-nombre .rotulo { color: var(--cafe); }
 .sobre-nombre .quote {
-  margin-top: var(--s2);
   font-family: var(--display);
   font-size: clamp(28px, 3vw, 36px);
   line-height: 1.15;
 }
-.sobre-nombre .logo { width: 260px; }
+.sobre-nombre .logo { width: 260px; margin-top: var(--s2); }
 .sobre-texto { display: flex; flex-direction: column; gap: var(--s2); justify-content: center; }
 .sobre-texto .h1 { margin-bottom: var(--s1); }
 .facts {
