@@ -284,7 +284,7 @@ p { margin: 0; }
   font-size: clamp(30px, 4vw, 48px);
   line-height: 1.1;
 }
-.voz-line.muted { color: var(--arena); font-family: var(--sans); }
+.voz-line.muted { color: var(--arena); font-family: var(--sans); font-size: clamp(28px, calc(4vw - 2px), 46px); }
 
 /* Looks */
 .looks {
