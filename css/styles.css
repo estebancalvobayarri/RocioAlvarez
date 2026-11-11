@@ -355,8 +355,8 @@ p { margin: 0; }
 .reserva { background: var(--cafe); color: var(--lino); text-align: center; }
 .reserva-inner { display: flex; flex-direction: column; align-items: center; }
 .reserva .logo-big { width: min(640px, 90%); }
-.reserva .display { margin-top: var(--s4); font-size: clamp(36px, 5vw, 56px); }
-.reserva .lead { color: var(--arena); margin-top: var(--s2); max-width: 600px; }
+.reserva-logo { margin: 0; line-height: 0; display: flex; justify-content: center; width: 100%; }
+.reserva .lead { color: var(--arena); margin-top: var(--s4); max-width: 600px; }
 .contacto-linea { color: var(--arena); margin-top: var(--s5); }
 .dots { display: flex; gap: 10px; margin-top: var(--s4); }
 .dots span { height: 10px; border-radius: var(--r-pill); }
