@@ -22,7 +22,7 @@ assets/images/web/      Las mismas fotos reducidas para la web (son las que se c
 | `assets/logos/logotipo-lazo-lema-marron.svg` | Portada (logotipo con lazo y lema) |
 | `assets/logos/logotipo-marron.svg` | Cabecera y pie |
 | `assets/logos/logotipo-cafe.svg` | Bloque arena de «Sobre mí» |
-| `assets/logos/logotipo-lema-blanco.svg` | Bloque café de reserva (logotipo con lema) |
+| `assets/logos/logotipo-lema-lino.svg` | Bloque café de reserva (logotipo con lema, en lino #F6F4F0) |
 | `assets/logos/lazo-circulo-marron.svg` | Icono de la pestaña del navegador |
 | `assets/logos/lazo-lineas-marron.svg` | Separador sobre la frase «Vale, hoy me pongo esto» |
 | `assets/iconos/icono-*.svg` | Iconos de los tres pasos de «Cómo funciona», a la derecha de cada número |
