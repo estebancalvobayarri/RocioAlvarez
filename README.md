@@ -25,7 +25,6 @@ assets/images/web/      Las mismas fotos reducidas para la web (son las que se c
 | `assets/logos/logotipo-blanco.svg` | Bloque café de reserva |
 | `assets/logos/lazo-circulo-marron.svg` | Icono de la pestaña del navegador |
 | `assets/logos/lazo-lineas-marron.svg` | Separador sobre la frase «Vale, hoy me pongo esto» |
-| `assets/iconos/icono-*.svg` | Iconos de los tres pasos de «Cómo funciona» (armario, percha con etiqueta, look) |
 | `assets/images/web/armario.jpg` | Foto de portada |
 | `assets/images/web/ficha-look-0X.jpg` | Las tres fichas de la sección Looks |
 
