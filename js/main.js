@@ -18,6 +18,35 @@
     });
   }
 
+  // Formulario de contacto: valida antes de enviar
+  var form = document.getElementById('contacto-form');
+  if (form) {
+    var reglas = {
+      nombre: function (v) { return v.trim() !== ''; },
+      email: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); },
+      mensaje: function (v) { return v.trim() !== ''; }
+    };
+    function marcar(nombre, mal) {
+      var input = form.elements[nombre];
+      var err = document.getElementById('cf-' + nombre + '-error');
+      input.setAttribute('aria-invalid', mal ? 'true' : 'false');
+      if (mal) input.setAttribute('aria-describedby', err.id); else input.removeAttribute('aria-describedby');
+      err.hidden = !mal;
+    }
+    Object.keys(reglas).forEach(function (n) {
+      form.elements[n].addEventListener('input', function () { marcar(n, false); });
+    });
+    form.addEventListener('submit', function (e) {
+      var primero = null;
+      Object.keys(reglas).forEach(function (n) {
+        var mal = !reglas[n](form.elements[n].value);
+        marcar(n, mal);
+        if (mal && !primero) primero = form.elements[n];
+      });
+      if (primero) { e.preventDefault(); primero.focus(); }
+    });
+  }
+
   // Año del pie
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();

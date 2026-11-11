@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=2026-11-11i">
+  <link rel="stylesheet" href="css/styles.css?v=2026-11-11k">
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -159,16 +159,56 @@
       </div>
     </section>
 
-    <!-- RESERVA -->
-    <section class="section reserva" id="reserva">
-      <div class="wrap reserva-inner">
-        <h2 class="reserva-logo"><img class="logo logo-big" data-logo src="assets/logos/logotipo-lema-lino.svg" alt="Zapatosdecharolconlazo · Hagamos que tu armario funcione" width="570" height="122"></h2>
-        <p class="lead">Cuéntame cómo es tu día a día y qué te gustaría cambiar. Te respondo yo y vemos juntas por dónde empezar.</p>
-        <div class="actions center">
-          <a class="btn btn-light" href="https://wa.me/34651057196?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
-          <a class="btn btn-outline-light" href="tel:+34651057196">Llámame · 651 057 196</a>
+    <!-- CONTACTO -->
+    <section class="section contacto" id="reserva">
+      <div class="wrap contacto-inner">
+        <div class="contacto-texto">
+          <p class="rotulo">Contacto</p>
+          <h2 class="h1">Reserva tu sesión</h2>
+          <p class="lead">Cuéntame cómo es tu día a día y qué te gustaría cambiar. Te respondo yo y vemos juntas por dónde empezar.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://wa.me/34651057196?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+            <a class="btn btn-secondary" href="tel:+34651057196">Llámame · 651 057 196</a>
+          </div>
+          <p class="rotulo contacto-linea">Rocío Álvarez Nölting</p>
+          <p class="contacto-email"><a href="mailto:rocio@zapatosdecharolconlazo.es">rocio@zapatosdecharolconlazo.es</a></p>
         </div>
-        <p class="rotulo contacto-linea">Rocío Álvarez Nölting · @zapatosdecharolconlazo</p>
+
+        <form class="contacto-form" id="contacto-form" action="https://formsubmit.co/rocio@zapatosdecharolconlazo.es" method="POST" novalidate>
+          <p class="form-titulo">O escríbeme un mensaje y te contesto lo antes posible.</p>
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web · Zapatosdecharolconlazo">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="campo">
+            <label for="cf-nombre">Nombre</label>
+            <input id="cf-nombre" name="nombre" type="text" autocomplete="name" placeholder="María" required>
+            <p class="error" id="cf-nombre-error" hidden>Escribe tu nombre.</p>
+          </div>
+          <div class="campo-fila">
+            <div class="campo">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="maria@correo.com" required>
+              <p class="error" id="cf-email-error" hidden>Escribe un email válido para poder responderte.</p>
+            </div>
+            <div class="campo">
+              <label for="cf-telefono">Teléfono <span class="opcional">(opcional)</span></label>
+              <input id="cf-telefono" name="telefono" type="tel" autocomplete="tel" placeholder="600 000 000">
+            </div>
+          </div>
+          <div class="campo">
+            <label for="cf-mensaje">Mensaje</label>
+            <textarea id="cf-mensaje" name="mensaje" rows="3" placeholder="Me gustaría ordenar mi armario y tener looks para el trabajo." required></textarea>
+            <p class="error" id="cf-mensaje-error" hidden>Cuéntame un poco qué necesitas.</p>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- MARCA -->
+    <section class="marca">
+      <div class="wrap marca-inner">
+        <img class="logo logo-big" data-logo src="assets/logos/logotipo-lema-lino.svg" alt="Zapatosdecharolconlazo · Hagamos que tu armario funcione" width="570" height="122">
         <div class="dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
       </div>
     </section>
@@ -179,11 +219,10 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <span>© <span data-year>2026</span> Rocío Álvarez · Estilismo de armario</span>
-      <a href="https://www.instagram.com/zapatosdecharolconlazo/" target="_blank" rel="noopener">Instagram</a>
       <img class="logo" data-logo src="assets/logos/logotipo-marron.svg" alt="Zapatosdecharolconlazo">
     </div>
   </footer>
 
-  <script src="js/main.js?v=2026-11-11i"></script>
+  <script src="js/main.js?v=2026-11-11k"></script>
 </body>
 </html>
