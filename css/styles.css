@@ -189,7 +189,7 @@ p { margin: 0; }
   position: sticky;
   top: 0;
   z-index: 20;
-  background: var(--piedra);
+  background: var(--lino);
   border-bottom: 1px solid var(--linea);
 }
 .header-inner {
@@ -399,7 +399,7 @@ p { margin: 0; }
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    background: var(--piedra);
+    background: var(--lino);
     border-bottom: 1px solid var(--linea);
     padding: var(--s1) var(--s4) var(--s3);
     display: none;
