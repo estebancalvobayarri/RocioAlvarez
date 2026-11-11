@@ -122,6 +122,36 @@ p { margin: 0; }
 
 .logo { height: auto; width: 230px; }
 
+/* Lazo animado de la portada: se dibuja como si se hiciera el lazo */
+.lazo-anim { display: block; width: 100%; max-width: 600px; height: auto; overflow: visible; }
+.lazo-anim .trazo {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 16;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 1;
+  animation: lazo-trazo .9s cubic-bezier(.45, 0, .25, 1) forwards;
+}
+.lazo-anim .t1 { animation-delay: .3s; }
+.lazo-anim .t2 { animation-delay: 1s; }
+.lazo-anim .t3 { animation-delay: 1.75s; animation-duration: .7s; }
+.lazo-anim .t4 { animation-delay: 2.2s; animation-duration: .9s; }
+.lazo-anim .linea {
+  transform-box: fill-box;
+  transform: scaleX(0);
+  animation: lazo-linea .9s cubic-bezier(.25, .6, .3, 1) 2.7s forwards;
+}
+.lazo-anim .izq { transform-origin: right center; }
+.lazo-anim .der { transform-origin: left center; }
+@keyframes lazo-trazo { to { stroke-dashoffset: 0; } }
+@keyframes lazo-linea { to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .lazo-anim .trazo { animation: none; stroke-dashoffset: 0; }
+  .lazo-anim .linea { animation: none; transform: none; }
+}
+
 /* ---------- Botones ---------- */
 
 .btn {
