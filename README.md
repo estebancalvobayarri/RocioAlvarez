@@ -29,6 +29,7 @@ assets/images/web/      Las mismas fotos reducidas para la web (son las que se c
 | `assets/logos/lazo-marron.svg` · `lazo-lineas-marron.svg` | Pie: lazo (escritorio) y lazo con líneas (móvil) |
 | `assets/logos/credito-ecwebdesign.svg` | Crédito «Diseño y web» en el pie, enlazado a ecwebdesign.es |
 | `assets/images/web/armario.jpg` | Foto de portada |
+| `assets/images/og-armario.jpg` | Imagen al compartir la web (WhatsApp, redes). Si cambia el dominio, actualiza las URL de `og:url` y `og:image` en `index.html` |
 | `assets/images/web/ficha-look-0X.jpg` | Las tres fichas de la sección Looks |
 
 También están en el repositorio, sin usar de momento: `logotipo-lema-marron.svg`, `logotipo-blanco.svg`, `logotipo-lazo-lema-blanco.svg` y `lazo-circulo-blanco.svg`. El lazo es de uso ocasional: portada, momentos especiales, icono y sello.
