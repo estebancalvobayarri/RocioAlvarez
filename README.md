@@ -10,7 +10,7 @@ Web estática de una página (HTML, CSS y un poco de JavaScript), sin dependenci
 index.html              Página única: portada, cómo funciona, looks, sobre mí y reserva
 css/styles.css          Estilos con los tokens del sistema de diseño
 js/main.js              Menú en móvil
-assets/logos/           Logotipo en vectores (marrón, café y blanco) y la Z
+assets/logos/           Logotipo en vectores (solo nombre, con lema y con lazo) y el lazo
 assets/images/          Fotos originales (armario y fichas de looks)
 assets/images/web/      Las mismas fotos reducidas para la web (son las que se cargan)
 ```
@@ -19,22 +19,24 @@ assets/images/web/      Las mismas fotos reducidas para la web (son las que se c
 
 | Archivo | Dónde se usa |
 |---|---|
+| `assets/logos/logotipo-lazo-lema-marron.svg` | Portada (logotipo con lazo y lema) |
 | `assets/logos/logotipo-marron.svg` | Cabecera y pie |
 | `assets/logos/logotipo-cafe.svg` | Bloque arena de «Sobre mí» |
 | `assets/logos/logotipo-blanco.svg` | Bloque café de reserva |
-| `assets/logos/z-marron.svg` | Icono de la pestaña del navegador |
+| `assets/logos/lazo-circulo-marron.svg` | Icono de la pestaña del navegador |
+| `assets/logos/lazo-lineas-marron.svg` | Separador sobre la frase «Vale, hoy me pongo esto» |
 | `assets/images/web/armario.jpg` | Foto de portada |
 | `assets/images/web/ficha-look-0X.jpg` | Las tres fichas de la sección Looks |
 
-Los archivos de lazo (`lazo-circulo-*.svg`) están en el repositorio pero no se usan, como se decidió.
+También están en el repositorio, sin usar de momento: `logotipo-lema-*.svg` (logotipo con lema), `logotipo-lazo-lema-blanco.svg` y `lazo-circulo-blanco.svg`. El lazo es de uso ocasional: portada, momentos especiales, icono y sello.
 
 Para añadir o cambiar una foto, sube el original a `assets/images/` y una copia reducida (unos 900–1200 px de ancho) a `assets/images/web/`.
 
 ## Identidad aplicada
 
-- **Nombre:** siempre todo seguido, «Zapatosdecharolconlazo». Sin lazos, zapatos ni iconos.
+- **Logotipo:** «Zapatosdecharolcon» en The Seasons + «lazo» en Six Hands Chalk, todo seguido, con el lema «HAGAMOS QUE TU ARMARIO FUNCIONE». En marrón sobre claro y en blanco sobre oscuro. El lazo, solo de forma ocasional.
 - **Paleta:** piedra #EBE9E5 · lino #F6F4F0 · arena clara #E6DFD4 · arena #D8CEC0 · topo #B09D8B · marrón #675749 · café #3B2F27. El texto va en café o marrón; topo nunca es texto.
-- **Tipografías:** Cormorant Garamond (títulos y firma) y Jost (textos; rótulos en mayúsculas con aire). Six Hands Chalk solo en el logotipo, desde el archivo.
+- **Tipografías:** Cormorant Garamond (títulos y firma) y Jost (textos; rótulos en mayúsculas con aire). The Seasons y Six Hands Chalk solo en el logotipo, desde el archivo.
 - **Tono:** de tú, frases cortas, situaciones reales; sin diminutivos, anglicismos ni presión para comprar.
 
 ## Pendiente

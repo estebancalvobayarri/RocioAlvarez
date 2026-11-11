@@ -205,7 +205,9 @@ p { margin: 0; }
   gap: var(--s5);
   align-items: center;
 }
-.hero-text .display { margin-top: var(--s3); }
+.hero-logo { margin: 0; line-height: 0; }
+.hero-logo img { width: 100%; max-width: 600px; height: auto; }
+.hero-text .firma { margin-top: var(--s3); color: var(--cafe); max-width: 600px; text-align: center; }
 .hero-text .lead { margin-top: var(--s3); max-width: 560px; }
 
 .hero-photo { margin: 0; }
@@ -310,6 +312,7 @@ p { margin: 0; }
 
 /* Frase */
 .frase { background: var(--arena); padding: var(--s5) 0; text-align: center; }
+.frase .lazo-lineas { width: min(560px, 100%); height: auto; margin: 0 auto var(--s3); }
 .frase p {
   font-family: var(--display);
   font-style: italic;
@@ -381,6 +384,7 @@ p { margin: 0; }
   .wrap { padding: 0 var(--s3); }
   .section { padding: var(--s5) 0; }
   .brand .logo { width: 180px; }
+  .hero-text .firma { font-size: 13px; letter-spacing: 0.06em; }
   .facts { grid-template-columns: 1fr; }
   .sobre-nombre { padding: var(--s4) var(--s3); }
   .footer-inner { flex-direction: column; justify-content: center; padding: var(--s3) 0; text-align: center; }
