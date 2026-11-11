@@ -323,6 +323,7 @@ p { margin: 0; }
 }
 .sobre-nombre .rotulo { color: var(--cafe); }
 .sobre-nombre .quote {
+  margin-top: var(--s2);
   font-family: var(--display);
   font-size: clamp(28px, 3vw, 36px);
   line-height: 1.15;
