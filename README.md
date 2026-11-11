@@ -22,14 +22,14 @@ assets/images/web/      Las mismas fotos reducidas para la web (son las que se c
 | `assets/logos/logotipo-lazo-lema-marron.svg` | Portada (logotipo con lazo y lema) |
 | `assets/logos/logotipo-marron.svg` | Cabecera y pie |
 | `assets/logos/logotipo-cafe.svg` | Bloque arena de «Sobre mí» |
-| `assets/logos/logotipo-blanco.svg` | Bloque café de reserva |
+| `assets/logos/logotipo-lema-blanco.svg` | Bloque café de reserva (logotipo con lema) |
 | `assets/logos/lazo-circulo-marron.svg` | Icono de la pestaña del navegador |
 | `assets/logos/lazo-lineas-marron.svg` | Separador sobre la frase «Vale, hoy me pongo esto» |
 | `assets/iconos/icono-*.svg` | Iconos de los tres pasos de «Cómo funciona», a la derecha de cada número |
 | `assets/images/web/armario.jpg` | Foto de portada |
 | `assets/images/web/ficha-look-0X.jpg` | Las tres fichas de la sección Looks |
 
-También están en el repositorio, sin usar de momento: `logotipo-lema-*.svg` (logotipo con lema), `logotipo-lazo-lema-blanco.svg` y `lazo-circulo-blanco.svg`. El lazo es de uso ocasional: portada, momentos especiales, icono y sello.
+También están en el repositorio, sin usar de momento: `logotipo-lema-marron.svg`, `logotipo-blanco.svg`, `logotipo-lazo-lema-blanco.svg` y `lazo-circulo-blanco.svg`. El lazo es de uso ocasional: portada, momentos especiales, icono y sello.
 
 Para añadir o cambiar una foto, sube el original a `assets/images/` y una copia reducida (unos 900–1200 px de ancho) a `assets/images/web/`.
 
