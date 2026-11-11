@@ -42,12 +42,15 @@ Para añadir o cambiar una foto, sube el original a `assets/images/` y una copia
 
 ## Pendiente
 
-- Email y dominio de la web.
-- Confirmar el usuario de Instagram (`@zapatosdecharolconlazo`).
+- Dominio de la web (el email de contacto es rocio@zapatosdecharolconlazo.es).
 
 ## Al cambiar estilos o JavaScript
 
 Sube el número de versión en `index.html` (`css/styles.css?v=…` y `js/main.js?v=…`) para que los navegadores no usen una copia antigua guardada.
+
+## Formulario de contacto
+
+El formulario de la sección Contacto envía los mensajes a **rocio@zapatosdecharolconlazo.es** a través de [FormSubmit](https://formsubmit.co) (gratis, sin servidor propio). La primera vez que alguien lo use, FormSubmit enviará a ese correo un email de activación: hay que pulsar el enlace una sola vez para empezar a recibir los mensajes.
 
 ## Ver en local
 
