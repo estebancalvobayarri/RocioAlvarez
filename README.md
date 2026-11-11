@@ -45,6 +45,10 @@ Para añadir o cambiar una foto, sube el original a `assets/images/` y una copia
 - Email y dominio de la web.
 - Confirmar el usuario de Instagram (`@zapatosdecharolconlazo`).
 
+## Al cambiar estilos o JavaScript
+
+Sube el número de versión en `index.html` (`css/styles.css?v=…` y `js/main.js?v=…`) para que los navegadores no usen una copia antigua guardada.
+
 ## Ver en local
 
 Abre `index.html` en el navegador, o sirve la carpeta:
