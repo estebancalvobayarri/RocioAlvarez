@@ -265,8 +265,6 @@ p { margin: 0; }
   gap: var(--s4);
 }
 .service { border-top: 1px solid var(--topo); padding-top: var(--s3); }
-.service-top { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--s2); }
-.service-icon { width: 64px; height: 64px; flex: none; }
 .service .num {
   font-family: var(--display);
   font-size: 44px;
