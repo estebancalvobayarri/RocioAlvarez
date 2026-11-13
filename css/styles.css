@@ -995,3 +995,9 @@ p { margin: 0; }
 }
 .precio-premium .precio-promo { color: var(--arena); }
 @media (max-width: 560px) { .precio-promo, .precio-premium .precio-promo { margin-bottom: var(--s3); } }
+
+/* Escritorio: la foto del armario empieza a la altura de la primera pregunta */
+@media (min-width: 961px) {
+  .hero-v2 .hero-inner { align-items: start; }
+  .hero-v2 .hero-photo { margin-top: 42px; } /* rótulo (18 px) + su separación (24 px) */
+}
