@@ -925,31 +925,26 @@ p { margin: 0; }
   .precio-ahora { font-size: 48px; }
 }
 
-/* Precios en mini tarjetas */
-.precios-grid { max-width: 820px; gap: var(--s2); }
-.precio { padding: var(--s3); gap: 6px; }
-.precio-nombre { font-size: 11px; letter-spacing: 0.18em; }
-.precio-servicio { font-size: 18px; line-height: 1.25; }
-.precio-cifra { margin: var(--s1) 0; gap: 10px; }
-.precio-ahora { font-size: 40px; }
-.precio-antes { font-size: 22px; }
-.precio-promo { margin: 0 0 var(--s2); font-size: 11px; line-height: 16px; padding: 3px 8px; }
-.precio .btn { min-height: 36px; padding: 8px 16px; font-size: 11px; }
+/* Precios: tarjetas con los colores de cada servicio, con aire */
+.precios-grid { max-width: 1000px; gap: var(--s3); }
+.precio { padding: var(--s5) var(--s4); gap: var(--s1); }
+.precio-nombre { font-size: 12px; letter-spacing: 0.2em; }
+.precio-servicio { font-size: 22px; line-height: 1.25; margin-top: 4px; }
+.precio-cifra { margin: var(--s3) 0 var(--s2); gap: 12px; }
+.precio-ahora { font-size: 52px; }
+.precio-antes { font-size: 26px; }
+.precio-promo { margin: 0 0 var(--s4); font-size: 12px; line-height: 18px; padding: 5px 10px; }
+.precio .btn { min-height: 42px; padding: 10px 20px; font-size: 12px; }
 @media (max-width: 960px) {
-  .precios-grid { max-width: 520px; }
+  .precios-grid { max-width: 520px; gap: var(--s3); }
 }
 @media (max-width: 560px) {
-  .precio {
-    padding: var(--s2) var(--s3);
-    display: grid; grid-template-columns: 1fr auto; column-gap: var(--s2); row-gap: 4px; align-items: center;
-  }
-  .precio .precio-nombre { grid-column: 1; }
-  .precio .precio-servicio { grid-column: 1; font-size: 17px; }
-  .precio .precio-cifra { grid-column: 2; grid-row: 1 / span 2; margin: 0; flex-direction: column; align-items: flex-end; gap: 2px; }
-  .precio-ahora { font-size: 36px; }
-  .precio-antes { font-size: 18px; }
-  .precio .precio-promo { grid-column: 1 / -1; margin: 6px 0 0; }
-  .precio .btn { grid-column: 1 / -1; justify-self: start; margin-top: var(--s1); }
+  .precio { padding: var(--s4) var(--s3); }
+  .precio-servicio { font-size: 21px; }
+  .precio-cifra { margin: var(--s2) 0; }
+  .precio-ahora { font-size: 46px; }
+  .precio-antes { font-size: 24px; }
+  .precio-promo { margin-bottom: var(--s3); }
 }
 
 /* Promoción sobre fondo café (Premium) */
@@ -990,3 +985,13 @@ p { margin: 0; }
   .frase-ropa em { display: inline-block; margin-top: 4px; }
 }
 @media (prefers-reduced-motion: reduce) { .js .trazo-mano path { transition: none; stroke-dashoffset: 0; } }
+
+/* Aviso de oferta: discreto, sin fondo */
+.precio-promo, .precio-premium .precio-promo {
+  background: none; padding: 0; border-radius: 0;
+  margin: calc(var(--s1) * -1) 0 var(--s4);
+  font-size: 12px; line-height: 18px; letter-spacing: 0.04em; font-style: italic;
+  color: var(--marron);
+}
+.precio-premium .precio-promo { color: var(--arena); }
+@media (max-width: 560px) { .precio-promo, .precio-premium .precio-promo { margin-bottom: var(--s3); } }
