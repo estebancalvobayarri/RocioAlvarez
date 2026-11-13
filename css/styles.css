@@ -1001,3 +1001,8 @@ p { margin: 0; }
   .hero-v2 .hero-inner { align-items: start; }
   .hero-v2 .hero-photo { margin-top: 42px; } /* rótulo (18 px) + su separación (24 px) */
 }
+
+/* Móvil: más aire entre el carrusel de preguntas y la firma */
+@media (max-width: 960px) {
+  .hero-v2 .hero-firma { margin-top: var(--s5); }
+}
