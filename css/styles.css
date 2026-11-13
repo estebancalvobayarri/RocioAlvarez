@@ -721,7 +721,7 @@ p { margin: 0; }
   .hero-v2 .preguntas li { transition: none; transform: none; }
 }
 
-/* Firma: en escritorio arriba (como antes); en móvil entre las preguntas y «Déjame que te ayude» */
+/* Firma: en escritorio arriba (como antes); en móvil entre las preguntas y «Deja que te ayude» */
 @media (min-width: 961px) {
   .hero-v2 .hero-text { display: flex; flex-direction: column; align-items: stretch; }
   .hero-v2 .hero-firma { order: -1; }
