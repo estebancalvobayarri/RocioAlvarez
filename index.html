@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zapatosdecharolconlazo · Rocío Álvarez · Estilismo de armario</title>
-  <meta name="description" content="Hagamos que tu armario funcione. Diagnóstico de armario, búsqueda personalizada y creación de looks con Rocío Álvarez.">
+  <meta name="description" content="¿Armario lleno y nada que ponerte? Asesoría de armario en tres pasos y asesoría para eventos con Rocío Álvarez.">
   <meta name="theme-color" content="#EBE9E5">
   <meta property="og:title" content="Zapatosdecharolconlazo · Estilismo de armario">
   <meta property="og:description" content="Hagamos que tu armario funcione. Rocío Álvarez · Estilismo de armario.">
@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=2026-11-11m">
+  <link rel="stylesheet" href="css/styles.css?v=2026-11-13">
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -39,9 +39,10 @@
         <span class="sr-only">Abrir menú</span><span class="bar"></span><span class="bar"></span>
       </button>
       <nav class="menu" id="menu" aria-label="Principal">
-        <a href="#como-funciona">Cómo funciona</a>
-        <a href="#looks">Looks</a>
+        <a href="#servicios">Cómo funciona</a>
+        <a href="#antes-despues">Antes y después</a>
         <a href="#sobre-mi">Sobre mí</a>
+        <a href="#precios">Precios</a>
         <a class="btn btn-primary" href="#reserva">Reserva tu sesión</a>
       </nav>
     </div>
@@ -49,12 +50,200 @@
 
   <main id="contenido">
 
-    <!-- PORTADA -->
-    <section class="hero">
+    <!-- PORTADA: LAS PREGUNTAS -->
+    <section class="hero hero-v2">
       <div class="wrap hero-inner">
         <div class="hero-text">
-          <h1 class="hero-logo">
-            <span class="sr-only">Zapatosdecharolconlazo · Hagamos que tu armario funcione</span>
+          <h1 class="sr-only">Zapatosdecharolconlazo · Rocío Álvarez, estilismo de armario</h1>
+          <ul class="preguntas">
+            <li>¿Tienes el armario lleno y sientes que no tienes nada que ponerte?</li>
+            <li>¿Te pasas horas mirando el armario, y acabas poniéndote siempre las mismas cuatro cosas?</li>
+            <li>¿Ha cambiado tu cuerpo, tu situación, tu ritmo de vida, y no te sientes cómoda con tu armario?</li>
+            <li>¿Compras y compras cosas, pero luego no sabes cómo y cuándo ponerte toda esa ropa?</li>
+            <li>¿No tienes tiempo para emplearlo en el armario? Buscar, seleccionar, comprar, probar, devolver… y vuelta a empezar!</li>
+          </ul>
+          <p class="rotulo hero-firma">Rocío Álvarez · Estilismo de armario</p>
+          <p class="ayuda">Déjame que te ayude.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#reserva">Reserva tu sesión</a>
+            <a class="btn btn-secondary" href="#servicios">Cómo funciona</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="assets/images/web/armario.jpg" alt="Una mano repasa camisas y jerséis en tonos crudos, camel y blanco colgados en un armario" width="1200" height="1423">
+          <figcaption class="foto-frase">Que vestirte cada día<br>sea más fácil</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="wrap">
+        <div class="como-funciona">
+          <h2 class="rotulo">Cómo funciona</h2>
+          <p class="como-texto">No se trata de convertirte en otra persona ni de llenarte de ropa nueva. Miramos qué tienes, qué necesitas, qué te gusta, cómo es tu vida y cómo te quieres sentir. Para abrir el armario y decir: «Vale, hoy me pongo esto»</p>
+        </div>
+        <div class="servicios" id="servicios-lista">
+          <p class="rotulo">Tres servicios</p>
+          <div class="tabs" role="tablist" aria-label="Servicios">
+            <button class="tab-servicio" role="tab" id="tab-estandar" aria-controls="panel-estandar" aria-selected="true">Estándar</button>
+            <button class="tab-servicio" role="tab" id="tab-premium" aria-controls="panel-premium" aria-selected="false" tabindex="-1">Premium</button>
+            <button class="tab-servicio" role="tab" id="tab-puntual" aria-controls="panel-puntual" aria-selected="false" tabindex="-1">Puntual</button>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-estandar" aria-labelledby="tab-estandar">
+            <h2 class="h1">Asesoría de armario en tres pasos</h2>
+          <ol class="pasos">
+            <li class="paso">
+              <p class="num">01</p>
+              <h3 class="rotulo">Diagnóstico de armario</h3>
+              <p>Empezamos por conocerte, para entender tu estilo, tu necesidad, las dificultades que encuentras tú cada mañana al vestirte.</p>
+              <p>Revisamos juntas tu armario: Esto sí. Esto no. Esto sobra, faltaría esto otro. Qué puede funcionar y qué falta para que funcione.</p>
+              <p class="duracion">(2-3 h máx.)</p>
+            </li>
+            <li class="paso">
+              <p class="num">02</p>
+              <h3 class="rotulo">Búsqueda personalizada</h3>
+              <p>Aquí me encargo de hacer lo que para muchas es un verdadero tedio… Búsqueda, rastreo, selección. Encuentro las prendas que encajan con tus necesidades, tu presupuesto y que además, elevan tu estilo.</p>
+              <p>Te envío los enlaces para que puedas ver las prendas y comprarlas directamente.</p>
+            </li>
+            <li class="paso">
+              <p class="num">03</p>
+              <h3 class="rotulo">Creación de looks</h3>
+              <p>Creamos juntas las combinaciones para tu día a día. Este pantalón con esta blusa y aquellos zapatos, ¿ves? Y también con esta falda. Genial. Esto con esto otro.</p>
+              <p>Vamos haciendo fotografías que te prepararé en una guía visual de looks, para que tengas todas esas ideas a mano.</p>
+              <p class="duracion">(2-3 h máx.)</p>
+            </li>
+          </ol>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-premium" aria-labelledby="tab-premium">
+          <article class="evento evento-premium">
+            <div class="evento-head">
+              <h2 class="h1">Olvídate de todo y déjamelo a mí.</h2>
+            </div>
+            <div class="evento-texto">
+              <p>Compro todas las prendas que consideremos y también me encargo de devolver las que no queramos.</p>
+              <p>Además, tendremos una sesión de shopping juntas para completar todo aquello que falte!</p>
+              <div class="actions">
+                <a class="btn btn-light" href="#reserva">Reserva tu sesión</a>
+              </div>
+            </div>
+          </article>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-puntual" aria-labelledby="tab-puntual">
+          <article class="evento evento-puntual">
+            <div class="evento-head">
+              <h2 class="h1">Asesoría puntual para eventos</h2>
+            </div>
+            <div class="evento-texto">
+              <p>Tienes cualquier evento: boda, comunión, entrevista, cena importante… y no sabes qué ponerte. Partimos de lo que ya tienes, busco lo que falta y te dejo el look completo, con zapatos y complementos.</p>
+              <div class="actions">
+                <a class="btn btn-secondary" href="https://wa.me/34651057196?text=Hola%20Roc%C3%ADo%2C%20tengo%20un%20evento%20y%20me%20gustar%C3%ADa%20que%20me%20ayudaras" target="_blank" rel="noopener">Cuéntame tu evento</a>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRASE 1 -->
+    <section class="frase-moda" aria-label="Frase">
+      <div class="wrap">
+        <img class="frase-lazo" src="assets/logos/lazo-circulo-blanco.svg" alt="" width="56" height="56">
+        <p><span>No a todos nos tiene que gustar la moda,</span> <em>pero sí todos tenemos que vestirnos cada día.</em></p>
+      </div>
+    </section>
+
+    <!-- ANTES Y DESPUÉS -->
+    <section class="section antes-despues" id="antes-despues">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="rotulo">Antes y después</p>
+          <h2 class="h1">Looks</h2>
+          <p class="lead narrow">Te preparo una guía visual con tus looks. No se trata de inspiración, si no de tu ropa real, ya combinada. Para que cuando no sepas qué ponerte digas: vale, hoy me pongo esto.</p>
+        </div>
+        <div class="carrusel ver-despues" aria-roledescription="carrusel" aria-label="Antes y después">
+          <div class="carrusel-cabecera">
+            <button type="button" class="tab" data-ver="antes" aria-pressed="false">Antes</button>
+            <button type="button" class="tab activa" data-ver="despues" aria-pressed="true">Después</button>
+            <span class="tab-pista">Toca la foto</span>
+          </div>
+          <div class="carrusel-pista" tabindex="0">
+            <figure class="slide" aria-roledescription="look" aria-label="Look 1 de 5">
+              <div class="slide-fotos">
+                <div class="foto-antes"><span class="look-nombre">Look 01</span><img src="assets/images/web/look-01-antes.jpg" alt="Antes: blazer gris, camisa de rayas, vaqueros oscuros y claros, bailarinas, mocasines y zapatillas sobre la cama" width="720" height="960"></div>
+                <img class="foto-despues" src="assets/images/web/look-01-despues.jpg" alt="Después: look 01 con la camisa de rayas, la blazer gris, los dos vaqueros y los tres pares de zapatos" width="720" height="960">
+              </div>
+              <figcaption>Blazer gris, camisa de rayas, dos vaqueros y tres pares de zapatos.</figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="look" aria-label="Look 2 de 5">
+              <div class="slide-fotos">
+                <div class="foto-antes"><span class="look-nombre">Look 02</span><img src="assets/images/web/look-02-antes.jpg" alt="Antes: camisa vaquera, jersey crudo, camiseta blanca, pantalón negro y zapatos sobre la cama" width="720" height="960" loading="lazy"></div>
+                <img class="foto-despues" src="assets/images/web/look-02-despues.jpg" alt="Después: look 02 con camisa vaquera, jersey crudo, camiseta blanca, pantalón negro de pinzas y cuatro pares de zapatos" width="720" height="960" loading="lazy">
+              </div>
+              <figcaption>Camisa vaquera, jersey crudo, camiseta blanca, pantalón negro y cuatro pares de zapatos.</figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="look" aria-label="Look 3 de 5">
+              <div class="slide-fotos">
+                <div class="foto-antes"><span class="look-nombre">Look 03</span><img src="assets/images/web/look-03-antes.jpg" alt="Antes: blazer negra, camisa vaquera, camiseta blanca, pantalón negro y zapatos sobre la cama" width="720" height="960" loading="lazy"></div>
+                <img class="foto-despues" src="assets/images/web/look-03-despues.jpg" alt="Después: look 03 con blazer negra sobre camisa vaquera y camiseta blanca, pantalón negro y cuatro pares de zapatos" width="720" height="960" loading="lazy">
+              </div>
+              <figcaption>Blazer negra, camisa vaquera, camiseta blanca, pantalón negro y cuatro pares de zapatos.</figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="look" aria-label="Look 4 de 5">
+              <div class="slide-fotos">
+                <div class="foto-antes"><span class="look-nombre">Look 04</span><img src="assets/images/web/look-04-antes.jpg" alt="Antes: jersey camel de pico, chaqueta beige, falda negra larga y tres pares de zapatos sobre la cama" width="720" height="960" loading="lazy"></div>
+                <img class="foto-despues" src="assets/images/web/look-04-despues.jpg" alt="Después: look 04 con el jersey camel, la falda negra, la chaqueta beige, merceditas y zapatillas" width="720" height="960" loading="lazy">
+              </div>
+              <figcaption>Jersey camel, chaqueta beige, falda negra y tres pares de zapatos.</figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="look" aria-label="Look 5 de 5">
+              <div class="slide-fotos">
+                <div class="foto-antes"><span class="look-nombre">Look 05</span><img src="assets/images/web/look-05-antes.jpg" alt="Antes: blazer negra, camiseta blanca, jersey rojo, pantalón caqui y zapatos sobre la cama" width="720" height="960" loading="lazy"></div>
+                <img class="foto-despues" src="assets/images/web/look-05-despues.jpg" alt="Después: look 05 con camiseta blanca, jersey rojo, pantalón caqui de pinzas, blazer negra y tres pares de zapatos" width="720" height="960" loading="lazy">
+              </div>
+              <figcaption>Jersey rojo, pantalón caqui, blazer negra, camiseta blanca y tres pares de zapatos.</figcaption>
+            </figure>
+          </div>
+          <div class="carrusel-nav">
+            <button type="button" class="carrusel-flecha" data-dir="-1" aria-label="Look anterior"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="carrusel-puntos"></div>
+            <span class="carrusel-contador" aria-live="polite">1 / 5</span>
+            <button type="button" class="carrusel-flecha" data-dir="1" aria-label="Look siguiente"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRASE 2 -->
+    <section class="frase-ropa" aria-label="Frase">
+      <div class="wrap">
+        <p>Detrás de un armario hay <em>mucho más que ropa<svg class="trazo-mano" viewBox="0 0 400 44" aria-hidden="true"><path pathLength="1" d="M4 12 C 70 4, 140 18, 212 11 C 240 8, 262 9, 268 19 C 274 30, 262 39, 250 36 C 236 32, 240 16, 262 12 C 300 6, 350 16, 396 10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></em></p>
+      </div>
+    </section>
+
+    <!-- SOY ROCÍO ÁLVAREZ -->
+    <section class="section historia" id="sobre-mi">
+      <div class="wrap historia-inner">
+        <div class="historia-head">
+          <p class="rotulo">Sobre mí</p>
+          <h2 class="historia-primera">Me llamo Rocío Álvarez y cuando tenía cuatro años me regalaron unos zapatos de charol con lazo.</h2>
+        </div>
+        <div class="historia-texto">
+          <p>Y cuando abrí la caja… me puse a besarlos. En serio, me salió del alma. Me acuerdo perfectamente, del olor, del sonido del charol cuando rozaba un zapato con el otro.</p>
+          <p>Me gustaron tanto que cogí la caja y la puse en mi mesita de noche, para que, cuando me despertara por la mañana, lo primero que viera fueran aquellos zapatos.</p>
+          <p>Bueno, os podéis imaginar. Mis hermanos llevan toda la vida riéndose de mí por eso. Me llamaban “zapatosdecharolconlazo”. Y eso definía perfectamente mi relación con la moda y la ropa.</p>
+          <p>Desde que tengo uso de razón me ha apasionado. Me he fijado siempre en las tendencias, qué se ve en la calle, qué se lleva, qué hay en las tiendas, qué cosas favorecen, cómo se combinan.</p>
+          <p>Pero me he dado cuenta con los años que, lo que para mí era una pasión, para muchísimas mujeres de mi alrededor era un quebradero de cabeza.</p>
+          <p>Porque la realidad es que no a todas nos tiene que gustar la moda y la ropa, pero sí todas tenemos que vestirnos cada mañana.</p>
+          <p>Y hay tantísimas mujeres que abren el armario y se desesperan, que piensan que no tienen nada que ponerse, que no se reconocen con lo que tienen, que no se sienten a gusto, que no tienen tiempo para renovar sus cosas, que quieren vestir mejor y no saben ni por dónde empezar…</p>
+        </div>
+      </div>
+      <div class="wrap historia-firma">
+        <div class="hero-logo" aria-hidden="true">
           <svg class="lazo-anim" viewBox="120 36 650 206" aria-hidden="true" focusable="false">
             <rect class="linea izq" x="128" y="81.4" width="209" height="1" fill="#675749"/>
             <rect class="linea der" x="553" y="81.4" width="209" height="1" fill="#675749"/>
@@ -64,100 +253,40 @@
             </svg>
             <image href="assets/logos/logotipo-lema-marron.svg" x="160" y="120" width="570" height="122"/>
           </svg>
-          </h1>
-          <p class="firma">Rocío Álvarez · Estilismo de armario</p>
-          <p class="lead">No se trata de convertirte en otra persona ni de llenarte de ropa nueva. Miramos qué tienes, qué necesitas, qué te gusta, cómo es tu vida y cómo te quieres sentir. Para abrir el armario y decir: «Vale, hoy me pongo esto».</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#reserva">Reserva tu sesión</a>
-            <a class="btn btn-secondary" href="#como-funciona">Cómo funciona</a>
-          </div>
         </div>
-        <figure class="hero-photo">
-          <img src="assets/images/web/armario.jpg" alt="Una mano repasa camisas y jerséis en tonos crudos, camel y blanco colgados en un armario" width="1200" height="1423" fetchpriority="high">
-        </figure>
       </div>
     </section>
 
-    <!-- CÓMO FUNCIONA -->
-    <section class="section" id="como-funciona">
+    <!-- PRECIOS -->
+    <section class="section precios" id="precios">
       <div class="wrap">
         <div class="section-head">
-          <p class="rotulo">Cómo funciona</p>
-          <h2 class="h1">Tres pasos, a tu ritmo</h2>
-          <p class="lead narrow">Puedes empezar por el que necesites. Lo normal es ir del primero al tercero, pero cada armario es distinto.</p>
+          <p class="rotulo">Precios</p>
+          <h2 class="h1">Elige tu servicio</h2>
         </div>
-        <div class="services">
-          <article class="service">
-            <div class="service-top"><p class="num">01</p><img class="service-icon" src="assets/iconos/icono-diagnostico.svg" alt="" width="54" height="54"></div>
-            <h3 class="rotulo">Diagnóstico de armario</h3>
-            <p>Revisamos y organizamos juntas tu armario. Vemos qué usas, qué no, qué te falta y qué te sobra.</p>
+        <div class="precios-grid">
+          <article class="precio precio-estandar" data-promo-hasta="2026-12-31">
+            <p class="precio-nombre">Estándar</p>
+            <p class="precio-servicio">Asesoría de armario en tres pasos</p>
+            <p class="precio-cifra"><span class="precio-antes" aria-label="Antes 300 euros">300 €</span> <span class="precio-ahora">200 €</span></p>
+            <p class="precio-promo">Precio promocional hasta el 31 de diciembre de 2026</p>
+            <a class="btn btn-secondary" href="#reserva">Reserva tu sesión</a>
           </article>
-          <article class="service">
-            <div class="service-top"><p class="num">02</p><img class="service-icon" src="assets/iconos/icono-busqueda.svg" alt="" width="54" height="54"></div>
-            <h3 class="rotulo">Búsqueda personalizada</h3>
-            <p>Busco y selecciono para ti las piezas que completan tu armario. Solo las que de verdad hacen falta.</p>
+          <article class="precio precio-premium" data-promo-hasta="2026-12-31">
+            <p class="precio-nombre">Premium</p>
+            <p class="precio-servicio">Olvídate de todo y déjamelo a mí</p>
+            <p class="precio-cifra"><span class="precio-antes" aria-label="Antes 500 euros">500 €</span> <span class="precio-ahora">400 €</span></p>
+            <p class="precio-promo">Precio promocional hasta el 31 de diciembre de 2026</p>
+            <a class="btn btn-light" href="#reserva">Reserva tu sesión</a>
           </article>
-          <article class="service">
-            <div class="service-top"><p class="num">03</p><img class="service-icon" src="assets/iconos/icono-looks.svg" alt="" width="54" height="54"></div>
-            <h3 class="rotulo">Creación de looks</h3>
-            <p>Juntas creamos combinaciones para tu día a día: el trabajo, el colegio, una cena que surge sin avisar.</p>
+          <article class="precio precio-puntual">
+            <p class="precio-nombre">Puntual</p>
+            <p class="precio-servicio">Asesoría puntual para eventos</p>
+            <p class="precio-cifra"><span class="precio-ahora">80 €</span></p>
+            <a class="btn btn-secondary" href="#reserva">Reserva tu sesión</a>
           </article>
         </div>
-      </div>
-    </section>
-
-    <!-- VOZ -->
-    <section class="section voz">
-      <div class="wrap voz-inner">
-        <p class="voz-line">No se trata de comprar por comprar.</p>
-        <p class="voz-line muted">A veces una sola prenda bien elegida hace que puedas usar otras cinco que ya tenías.</p>
-      </div>
-    </section>
-
-    <!-- LOOKS -->
-    <section class="section" id="looks">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="rotulo">Looks</p>
-          <h2 class="h1">Combinaciones para la vida real</h2>
-          <p class="lead narrow">Prendas sobre plano, con luz natural y aire alrededor. La ropa manda; la marca acompaña.</p>
-        </div>
-        <div class="looks">
-          <figure class="look">
-            <img src="assets/images/web/ficha-look-01.jpg?v=3" alt="Look 01: Blazer negra, jersey rojo sobre los hombros, vaqueros, pañuelo rojo, mocasines de charol y bolso negro" width="900" height="1085" loading="lazy">
-          </figure>
-          <figure class="look">
-            <img src="assets/images/web/ficha-look-02.jpg?v=3" alt="Look 02: Abrigo camel, camisa de rayas, pañuelo rojo, pantalón negro de pinzas, bolso marrón y mocasines negros" width="900" height="1085" loading="lazy">
-          </figure>
-          <figure class="look">
-            <img src="assets/images/web/ficha-look-03.jpg?v=3" alt="Look 03: Jersey de rayas rojo y camel, pantalón negro ancho, merceditas y mocasines de ante camel" width="900" height="1085" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE MÍ -->
-    <section class="section sobre" id="sobre-mi">
-      <div class="wrap sobre-inner">
-        <div class="sobre-nombre">
-          <div>
-            <p class="rotulo">El nombre</p>
-            <img class="logo" data-logo src="assets/logos/logotipo-cafe.svg" alt="Zapatosdecharolconlazo">
-          </div>
-          <div>
-            <p class="quote">Así me llamaban en casa. Por eso se escribe todo seguido, como se dice: de corrido y con cariño.</p>
-          </div>
-        </div>
-        <div class="sobre-texto">
-          <p class="rotulo">Sobre mí</p>
-          <h2 class="h1">Soy Rocío Álvarez</h2>
-          <p>Estoy casada y soy madre de dos. Conozco de primera mano las mañanas con prisa, el colegio, el trabajo y la cena que surge sin avisar. Por eso pienso en vidas reales, no en armarios de revista.</p>
-          <p>Trabajo con mujeres de 30 años en adelante que quieren vestirse sin complicarse y sintiéndose ellas. Te hablo de tú a tú, como una amiga que sabe de esto: sin prisas, sin presión para comprar y sin juicios sobre tu cuerpo ni tu ropa.</p>
-          <dl class="facts">
-            <div><dt>Quién</dt><dd>Rocío Álvarez Nölting, estilista de armario.</dd></div>
-            <div><dt>Para quién</dt><dd>Mujeres de 30 años en adelante que quieren que su armario trabaje para ellas.</dd></div>
-          </dl>
-        </div>
+        <p class="precios-nota"><a href="#servicios">Ver qué incluye cada servicio</a></p>
       </div>
     </section>
 
@@ -234,6 +363,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2026-11-11m"></script>
+  <script src="js/main.js?v=2026-11-13"></script>
 </body>
 </html>
