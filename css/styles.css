@@ -985,3 +985,13 @@ p { margin: 0; }
   .frase-ropa em { display: inline-block; margin-top: 4px; }
 }
 @media (prefers-reduced-motion: reduce) { .js .trazo-mano path { transition: none; stroke-dashoffset: 0; } }
+
+/* Aviso de oferta: discreto, sin fondo */
+.precio-promo, .precio-premium .precio-promo {
+  background: none; padding: 0; border-radius: 0;
+  margin: calc(var(--s1) * -1) 0 var(--s4);
+  font-size: 12px; line-height: 18px; letter-spacing: 0.04em; font-style: italic;
+  color: var(--marron);
+}
+.precio-premium .precio-promo { color: var(--arena); }
+@media (max-width: 560px) { .precio-promo, .precio-premium .precio-promo { margin-bottom: var(--s3); } }
