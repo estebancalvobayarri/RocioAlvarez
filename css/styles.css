@@ -1120,3 +1120,34 @@ html, body { overflow-anchor: none; }
   .js .historia-texto.plegado .seguir-leyendo { float: right; margin-left: var(--s2); line-height: inherit; }
   .js .historia-texto.plegado .primer-parrafo::after { content: ""; display: block; clear: both; }
 }
+
+/* Sobre el proyecto: fondo marrón, frase como la de Sobre mí y «Seguir leyendo» que despliega el texto */
+.proyecto { background: #675749; color: var(--lino); }
+.proyecto .rotulo { color: var(--arena); }
+.proyecto-frase { max-width: 860px; }
+.proyecto-frase {
+  margin: var(--s2) 0 0;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(30px, 3vw, 40px); line-height: 1.15;
+  color: var(--lino);
+}
+.leer-mas-proyecto {
+  display: none;
+  align-items: center; gap: 10px; margin-top: var(--s4);
+  font-family: var(--sans); font-style: italic; font-weight: 300; font-size: 15px; line-height: 1.4;
+  color: var(--arena-clara); background: none; border: 0; padding: 4px 0; cursor: pointer;
+}
+.leer-mas-proyecto::after {
+  content: ""; width: 7px; height: 7px; margin-top: -4px;
+  border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(45deg);
+}
+.proyecto-texto { display: grid; gap: var(--s2); margin-top: var(--s4); max-width: 680px; font-size: 18px; line-height: 30px; color: var(--arena-clara); }
+.proyecto-texto p:last-child { font-family: var(--display); font-style: italic; font-size: 24px; line-height: 1.3; color: var(--lino); }
+.js .proyecto.plegado .leer-mas-proyecto { display: inline-flex; }
+.js .proyecto.plegado .proyecto-texto { display: none; }
+.proyecto.abierto .proyecto-texto { animation: paso-abre .35s ease; }
+@media (max-width: 560px) {
+  .proyecto-frase { font-size: 30px; }
+  .proyecto-texto { font-size: 17px; line-height: 28px; }
+  .proyecto-texto p:last-child { font-size: 22px; }
+}
