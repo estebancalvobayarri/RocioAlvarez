@@ -1163,3 +1163,7 @@ html, body { overflow-anchor: none; }
   .historia-texto.abierto > .historia-dibujo { animation: paso-abre .35s ease; }
   .historia-dibujo img { width: min(272px, 70%); } /* móvil: −20 % */
 }
+
+/* Lazo de Sobre mí: estático desde el principio (la animación queda solo en el logotipo de entrada) */
+.lazo-anim.lazo-estatico .trazo { animation: none; stroke-dashoffset: 0; }
+.lazo-anim.lazo-estatico .linea { animation: none; transform: none; }
