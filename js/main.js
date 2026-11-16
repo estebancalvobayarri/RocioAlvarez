@@ -268,15 +268,5 @@
   })();
 
 
-  // Frase de portada: las palabras aparecen una a una al verse
-  (function () {
-    var f = document.querySelector('.frase-portada');
-    if (!f) return;
-    if (!('IntersectionObserver' in window)) { f.classList.add('play'); return; }
-    var io = new IntersectionObserver(function (e) {
-      if (e[0].isIntersecting) { f.classList.add('play'); io.disconnect(); }
-    }, { threshold: 0.5 });
-    io.observe(f);
-  })();
 
 })();

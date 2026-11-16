@@ -1025,25 +1025,12 @@ p { margin: 0; }
 /* La compensación de scroll la hace el JS; así se comporta igual en Chrome y Safari */
 html, body { overflow-anchor: none; }
 
-/* Frase de portada: franja marrón, letra recta, las palabras aparecen una a una */
-.frase-portada { background: var(--marron); color: var(--lino); padding: var(--s5) 0; text-align: center; }
-.frase-portada .palabras {
-  margin: 0 auto; max-width: 980px;
-  font-family: var(--display); font-weight: 400; font-style: normal;
-  font-size: clamp(30px, 3.4vw, 46px); line-height: 1.15; letter-spacing: 0.01em;
-}
-.frase-portada .palabras span { display: inline-block; }
-.frase-portada .acento { color: var(--arena-clara); }
-.js .frase-portada .palabras span {
-  opacity: 0; transform: translateY(10px);
-  transition: opacity .7s ease, transform .7s ease;
-  transition-delay: calc(var(--i) * .14s + .3s);
-}
-.js .frase-portada.play .palabras span { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) {
-  .js .frase-portada .palabras span { opacity: 1; transform: none; transition: none; }
-}
-@media (max-width: 560px) {
-  .frase-portada { padding: var(--s4) 0; }
-  .frase-portada .palabras { font-size: 30px; }
-}
+/* Frase de portada: franja marrón bajo el logotipo, sin animación */
+.frase-portada { background: var(--marron); color: var(--lino); text-align: center; }
+.fp-texto { margin: 0 auto; }
+.fp-a, .fp-b { display: block; }
+
+/* Dos voces: rótulo pequeño arriba y la promesa grande en serif (propuesta B elegida) */
+.fp-v2 { padding: var(--s5) 0; }
+.fp-v2 .fp-a { font-family: var(--sans); text-transform: uppercase; font-size: 13px; letter-spacing: 0.34em; color: var(--arena); }
+.fp-v2 .fp-b { margin-top: 10px; font-family: var(--display); font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1; letter-spacing: 0.01em; }
