@@ -1033,3 +1033,7 @@ p { margin: 0; }
   .intro-lazo { width: min(360px, 94%); }
   .intro-marca { width: min(320px, 86%); }
 }
+
+/* Logotipo de entrada animado: primero el lazo, luego se abren las líneas */
+.intro-logo .intro-anim { width: min(600px, 92%); max-width: none; margin: 0 auto; }
+@media (max-width: 560px) { .intro-logo .intro-anim { width: min(380px, 96%); } }
