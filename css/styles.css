@@ -1154,3 +1154,12 @@ html, body { overflow-anchor: none; }
 
 /* «Seguir leyendo» de Sobre el proyecto, a la derecha (borde derecho de la frase) */
 .proyecto-accion { max-width: 860px; display: flex; justify-content: flex-end; }
+
+/* Dibujo de los zapatos de charol en Sobre mí (trazo café sobre transparente) */
+.historia-dibujo { margin: var(--s2) 0; display: flex; justify-content: center; }
+.historia-dibujo img { width: min(396px, 100%); height: auto; } /* escritorio: 10 % menos que los 440 px iniciales */
+@media (max-width: 960px) {
+  .js .historia-texto.plegado > .historia-dibujo { display: none; }
+  .historia-texto.abierto > .historia-dibujo { animation: paso-abre .35s ease; }
+  .historia-dibujo img { width: min(340px, 88%); }
+}
