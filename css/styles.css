@@ -1040,3 +1040,9 @@ html, body { overflow-anchor: none; }
   .fp-v2 { padding: var(--s3) 0; }
   .fp-v2 .fp-b { margin-top: 6px; }
 }
+
+/* Móvil: «Deja que te ayude» centrada y antes de la firma */
+@media (max-width: 960px) {
+  .hero-v2 .ayuda { order: 4; margin-top: var(--s5); text-align: center; }
+  .hero-v2 .hero-firma { order: 5; margin-top: var(--s2); }
+}
