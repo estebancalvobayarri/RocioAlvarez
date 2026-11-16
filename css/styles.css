@@ -1116,3 +1116,7 @@ html, body { overflow-anchor: none; }
   .historia-texto.abierto .parrafo-resto { animation: paso-abre .35s ease; }
 }
 .historia-texto:not(.plegado) .seguir-leyendo { display: none; }
+@media (max-width: 960px) {
+  .js .historia-texto.plegado .seguir-leyendo { float: right; margin-left: var(--s2); line-height: inherit; }
+  .js .historia-texto.plegado .primer-parrafo::after { content: ""; display: block; clear: both; }
+}
