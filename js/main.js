@@ -269,4 +269,23 @@
 
 
 
+
+  // Pasos del Estándar: desplegables solo en móvil; en escritorio, siempre abiertos y sin botón
+  (function () {
+    var pasos = document.querySelectorAll('.paso-detalle');
+    if (!pasos.length) return;
+    var movil = window.matchMedia('(max-width: 960px)');
+    function aplicar() {
+      document.documentElement.classList.toggle('pasos-fijos', !movil.matches);
+      pasos.forEach(function (d) { d.open = !movil.matches; });
+    }
+    pasos.forEach(function (d) {
+      d.querySelector('summary').addEventListener('click', function (e) {
+        if (!movil.matches) e.preventDefault();
+      });
+    });
+    aplicar();
+    if (movil.addEventListener) movil.addEventListener('change', aplicar);
+  })();
+
 })();

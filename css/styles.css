@@ -1086,3 +1086,8 @@ html, body { overflow-anchor: none; }
 @keyframes paso-abre { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
 .paso-cuerpo p:not(.duracion) { font-size: 16px; line-height: 27px; color: var(--marron); }
 @media (prefers-reduced-motion: reduce) { .paso-detalle[open] .paso-cuerpo { animation: none; } }
+
+/* Escritorio: los pasos se ven siempre abiertos, como antes (sin «+» ni cursor de botón) */
+.pasos-fijos .paso-detalle summary { cursor: default; }
+.pasos-fijos .paso-mas { display: none; }
+.pasos-fijos .paso-detalle[open] .paso-cuerpo { animation: none; }
