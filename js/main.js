@@ -306,4 +306,20 @@
     });
   })();
 
+
+  // Sobre el proyecto: «Seguir leyendo» despliega el texto (en todas las vistas)
+  (function () {
+    var sec = document.querySelector('.proyecto');
+    var boton = sec && sec.querySelector('.leer-mas-proyecto');
+    if (!boton) return;
+    sec.classList.add('plegado');
+    boton.addEventListener('click', function () {
+      sec.classList.remove('plegado');
+      sec.classList.add('abierto');
+      boton.setAttribute('aria-expanded', 'true');
+      var t = document.getElementById('proyecto-texto');
+      if (t) { t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); }
+    });
+  })();
+
 })();
