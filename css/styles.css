@@ -1091,3 +1091,20 @@ html, body { overflow-anchor: none; }
 .pasos-fijos .paso-detalle summary { cursor: default; }
 .pasos-fijos .paso-mas { display: none; }
 .pasos-fijos .paso-detalle[open] .paso-cuerpo { animation: none; }
+
+/* Sobre mí en móvil: solo el primer párrafo y «Seguir leyendo» para desplegar el resto */
+.seguir-leyendo { display: none; }
+@media (max-width: 960px) {
+  .js .historia-texto.plegado > p:not(:first-child) { display: none; }
+  .js .historia-texto.plegado .seguir-leyendo {
+    display: inline-flex; align-items: center; gap: 10px; justify-self: start;
+    font: inherit; font-size: 12px; line-height: 18px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--cafe); background: none; border: 0; padding: 6px 0; cursor: pointer;
+    border-bottom: 1px solid var(--topo);
+  }
+  .js .historia-texto.plegado .seguir-leyendo::after {
+    content: ""; width: 7px; height: 7px; margin-top: -4px;
+    border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(45deg);
+  }
+  .historia-texto.abierto > p:not(:first-child) { animation: paso-abre .35s ease; }
+}

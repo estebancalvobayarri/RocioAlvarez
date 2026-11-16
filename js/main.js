@@ -290,4 +290,20 @@
     if (movil.addEventListener) movil.addEventListener('change', aplicar);
   })();
 
+
+  // Sobre mí (móvil): plegado tras el primer párrafo; «Seguir leyendo» despliega el resto
+  (function () {
+    var texto = document.querySelector('.historia-texto');
+    var boton = texto && texto.querySelector('.seguir-leyendo');
+    if (!boton) return;
+    texto.classList.add('plegado');
+    boton.addEventListener('click', function () {
+      texto.classList.remove('plegado');
+      texto.classList.add('abierto');
+      boton.setAttribute('aria-expanded', 'true');
+      var segundo = texto.querySelectorAll('p')[1];
+      if (segundo) { segundo.setAttribute('tabindex', '-1'); segundo.focus({ preventScroll: true }); }
+    });
+  })();
+
 })();
