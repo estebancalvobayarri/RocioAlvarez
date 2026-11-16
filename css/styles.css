@@ -1020,13 +1020,19 @@ p { margin: 0; }
 .intro-marca { width: min(500px, 84%); height: auto; }
 
 /* Con JS: la cabecera va fija y escondida hasta pasar el logotipo de entrada */
+/* Aparece ya en su sitio con un fundido (sin deslizarse): algunos móviles no repintan
+   un desplazamiento mientras se hace scroll y la cabecera se quedaba cortada */
 .js .site-header {
   position: fixed; left: 0; right: 0; top: 0;
-  transform: translateY(-100%);
-  transition: transform .35s ease, box-shadow .35s ease;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity .3s ease, visibility 0s linear .3s;
 }
-.js .site-header.visible { transform: none; box-shadow: 0 1px 0 var(--linea); }
-@media (prefers-reduced-motion: reduce) { .js .site-header { transition: none; } }
+.js .site-header.visible {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  box-shadow: 0 1px 0 var(--linea);
+  transition: opacity .3s ease, visibility 0s;
+}
+@media (prefers-reduced-motion: reduce) { .js .site-header, .js .site-header.visible { transition: none; } }
 
 @media (max-width: 560px) {
   .intro-logo { padding: var(--s4) var(--s2); gap: 12px; }
