@@ -662,30 +662,6 @@ p { margin: 0; }
   .hero-v2 .actions { order: 6; }
 }
 
-/* Frase sobre la foto del armario */
-.hero-v2 .hero-photo { position: relative; }
-.hero-v2 .hero-photo::after {
-  content: ""; position: absolute; inset: 0;
-  border-radius: var(--r-md);
-  background: linear-gradient(to top, rgba(59, 47, 39, 0.78) 0%, rgba(59, 47, 39, 0.38) 30%, rgba(59, 47, 39, 0) 55%);
-  pointer-events: none;
-}
-.foto-frase {
-  position: absolute; left: 0; right: 0; bottom: 0; z-index: 1;
-  padding: var(--s4) var(--s4) calc(var(--s4) + 4px);
-  font-family: var(--display); font-style: italic; font-weight: 400;
-  font-size: clamp(30px, 2.8vw, 40px); line-height: 1.08;
-  color: var(--lino);
-  text-shadow: 0 1px 12px rgba(30, 22, 17, 0.35);
-}
-.foto-frase::before {
-  content: ""; display: block; width: 44px; height: 1px;
-  background: var(--arena); margin-bottom: var(--s2); opacity: 0.9;
-}
-@media (max-width: 560px) {
-  .foto-frase { font-size: 30px; padding: var(--s3) var(--s3) calc(var(--s3) + 4px); }
-}
-
 /* Móvil: las preguntas pasan solas como un carrusel (cada 3 s) */
 .preguntas-puntos { display: none; }
 @media (max-width: 700px) {
@@ -1048,3 +1024,13 @@ p { margin: 0; }
 .cabecera-fija .intro-logo { padding-top: calc(var(--alto-cabecera, 81px) + var(--s4)); }
 /* La compensación de scroll la hace el JS; así se comporta igual en Chrome y Safari */
 html, body { overflow-anchor: none; }
+
+/* Frase de portada: franja marrón bajo el logotipo, sin animación */
+.frase-portada { background: var(--marron); color: var(--lino); text-align: center; }
+.fp-texto { margin: 0 auto; }
+.fp-a, .fp-b { display: block; }
+
+/* Dos voces: rótulo pequeño arriba y la promesa grande en serif (propuesta B elegida) */
+.fp-v2 { padding: var(--s5) 0; }
+.fp-v2 .fp-a { font-family: var(--sans); text-transform: uppercase; font-size: 13px; letter-spacing: 0.34em; color: var(--arena); }
+.fp-v2 .fp-b { margin-top: 10px; font-family: var(--display); font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1; letter-spacing: 0.01em; }
