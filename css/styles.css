@@ -1,3 +1,10 @@
+/* Tipografías alojadas en la propia web (antes se cargaban desde Google Fonts).
+   Cormorant Garamond y Jost, licencia SIL Open Font License (ver assets/fonts/OFL-*.txt). */
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400 500; font-display: swap; src: url("../assets/fonts/cormorant-garamond.woff") format("woff"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("../assets/fonts/cormorant-garamond-italic.woff") format("woff"); }
+@font-face { font-family: "Jost"; font-style: normal; font-weight: 300 500; font-display: swap; src: url("../assets/fonts/jost.woff") format("woff"); }
+@font-face { font-family: "Jost"; font-style: italic; font-weight: 300; font-display: swap; src: url("../assets/fonts/jost-italic.woff") format("woff"); }
+
 /* Zapatosdecharolconlazo · hoja de estilos
    Tokens del sistema de diseño (manual de marca, edición 2026) */
 
