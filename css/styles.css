@@ -1214,7 +1214,7 @@ html, body { overflow-anchor: none; }
 .pie-derecha .pie-legales { margin-top: 0; line-height: 22px; }
 .pie-derecha .pie-credito { margin-top: var(--s2); }
 @media (max-width: 960px) {
-  .pie-derecha { order: 3; align-items: center; margin-top: -10px; }
+  .pie-derecha { order: 3; align-items: center; margin-top: 6px; }
   .pie-derecha .pie-legales { margin-top: 0; }
   .pie-derecha .pie-credito { margin-top: 56px; }
 }
