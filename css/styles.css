@@ -1033,4 +1033,10 @@ html, body { overflow-anchor: none; }
 /* Dos voces: rótulo pequeño arriba y la promesa grande en serif (propuesta B elegida) */
 .fp-v2 { padding: var(--s5) 0; }
 .fp-v2 .fp-a { font-family: var(--sans); text-transform: uppercase; font-size: 13px; letter-spacing: 0.34em; color: var(--arena); }
-.fp-v2 .fp-b { margin-top: 10px; font-family: var(--display); font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1; letter-spacing: 0.01em; }
+.fp-v2 .fp-b { margin-top: 10px; font-family: var(--display); font-weight: 400; font-size: clamp(40px, 4.6vw, 62px); line-height: 1; letter-spacing: 0.01em; }
+
+/* Móvil: franja de la frase más baja, para que mande el logotipo de entrada */
+@media (max-width: 560px) {
+  .fp-v2 { padding: var(--s3) 0; }
+  .fp-v2 .fp-b { margin-top: 6px; }
+}
