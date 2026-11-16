@@ -1151,3 +1151,6 @@ html, body { overflow-anchor: none; }
   .proyecto-texto { font-size: 17px; line-height: 28px; }
   .proyecto-texto p:last-child { font-size: 22px; }
 }
+
+/* «Seguir leyendo» de Sobre el proyecto, a la derecha (borde derecho de la frase) */
+.proyecto-accion { max-width: 860px; display: flex; justify-content: flex-end; }
