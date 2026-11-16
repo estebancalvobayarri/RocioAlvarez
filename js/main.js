@@ -58,7 +58,13 @@
         marcar(n, mal);
         if (mal && !primero) primero = form.elements[n];
       });
-      if (primero) { e.preventDefault(); primero.focus(); }
+      e.preventDefault();
+      if (primero) { primero.focus(); return; }
+      // Sin servicios externos: abre el correo de la persona con el mensaje ya preparado (como en Kalokai)
+      var v = function (n) { return form.elements[n] ? form.elements[n].value.trim() : ''; };
+      var cuerpo = v('mensaje') + '\n\n— ' + v('nombre') + '\n' + v('email') + (v('telefono') ? '\n' + v('telefono') : '');
+      var asunto = 'Mensaje desde la web · ' + v('nombre');
+      window.location.href = 'mailto:rocio@zapatosdecharolconlazo.es?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
     });
   }
 

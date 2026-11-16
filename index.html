@@ -23,7 +23,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/logos/lazo-circulo-marron.svg">
   <link rel="preload" href="assets/fonts/jost.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/fonts/cormorant-garamond.woff" as="font" type="font/woff" crossorigin>
-  <link rel="stylesheet" href="css/styles.css?v=2026-11-16-fuentes">
+  <link rel="stylesheet" href="css/styles.css?v=2026-11-16-correo">
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -367,11 +367,8 @@
           <p class="contacto-email"><a href="mailto:rocio@zapatosdecharolconlazo.es">rocio@zapatosdecharolconlazo.es</a></p>
         </div>
 
-        <form class="contacto-form" id="contacto-form" action="https://formsubmit.co/rocio@zapatosdecharolconlazo.es" method="POST" novalidate>
+        <form class="contacto-form" id="contacto-form" action="mailto:rocio@zapatosdecharolconlazo.es" method="GET" novalidate>
           <p class="form-titulo">O escríbeme un mensaje y te contesto lo antes posible.</p>
-          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web · Zapatosdecharolconlazo">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="campo">
             <label for="cf-nombre">Nombre</label>
             <input id="cf-nombre" name="nombre" type="text" autocomplete="name" placeholder="María" required>
@@ -394,6 +391,7 @@
             <p class="error" id="cf-mensaje-error" hidden>Cuéntame un poco qué necesitas.</p>
           </div>
           <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-nota">Al enviar se abrirá tu correo con el mensaje ya preparado para Rocío. Si no se abre, escríbele a <a href="mailto:rocio@zapatosdecharolconlazo.es">rocio@zapatosdecharolconlazo.es</a>.</p>
         </form>
       </div>
     </section>
@@ -420,6 +418,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2026-11-16-fuentes"></script>
+  <script src="js/main.js?v=2026-11-16-correo"></script>
 </body>
 </html>
