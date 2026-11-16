@@ -1210,7 +1210,7 @@ html, body { overflow-anchor: none; }
 
 /* Pie: enlaces legales a la derecha, encima del crédito */
 .pie-derecha { justify-self: end; display: flex; flex-direction: column; align-items: flex-end; }
-@media (min-width: 961px) { .footer-inner { padding: var(--s3) 0; } }
+@media (min-width: 961px) { .footer-inner { padding-top: var(--s3); padding-bottom: var(--s3); } }
 .pie-derecha .pie-legales { margin-top: 0; line-height: 22px; }
 .pie-derecha .pie-credito { margin-top: var(--s2); }
 @media (max-width: 960px) {
