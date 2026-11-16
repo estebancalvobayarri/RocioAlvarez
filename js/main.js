@@ -301,8 +301,8 @@
       texto.classList.remove('plegado');
       texto.classList.add('abierto');
       boton.setAttribute('aria-expanded', 'true');
-      var segundo = texto.querySelectorAll('p')[1];
-      if (segundo) { segundo.setAttribute('tabindex', '-1'); segundo.focus({ preventScroll: true }); }
+      var resto = texto.querySelector('.parrafo-resto');
+      if (resto) { resto.setAttribute('tabindex', '-1'); resto.focus({ preventScroll: true }); }
     });
   })();
 

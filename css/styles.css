@@ -1108,3 +1108,15 @@ html, body { overflow-anchor: none; }
   }
   .historia-texto.abierto > p:not(:first-child) { animation: paso-abre .35s ease; }
 }
+
+/* Sobre mí (móvil): «Seguir leyendo» a la derecha de «Y cuando abrí la caja…»; al tocar se ve el resto del párrafo y lo demás */
+@media (max-width: 960px) {
+  .js .historia-texto.plegado .parrafo-resto { display: none; }
+  .js .historia-texto.plegado .seguir-leyendo { display: inline-flex; vertical-align: baseline; margin-left: 6px; padding: 0; }
+  .historia-texto.abierto .parrafo-resto { animation: paso-abre .35s ease; }
+}
+.historia-texto:not(.plegado) .seguir-leyendo { display: none; }
+@media (max-width: 960px) {
+  .js .historia-texto.plegado .seguir-leyendo { float: right; margin-left: var(--s2); line-height: inherit; }
+  .js .historia-texto.plegado .primer-parrafo::after { content: ""; display: block; clear: both; }
+}
