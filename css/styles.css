@@ -1100,7 +1100,7 @@ html, body { overflow-anchor: none; }
     display: inline-flex; align-items: center; gap: 10px; justify-self: start;
     font-family: var(--sans); font-style: normal; font-weight: 500; font-size: 15px; line-height: 1.4;
     letter-spacing: 0.02em; text-transform: none;
-    color: var(--cafe); background: none; border: 0; padding: 4px 0; cursor: pointer;
+    color: var(--marron); background: none; border: 0; padding: 4px 0; cursor: pointer;
   }
   .js .historia-texto.plegado .seguir-leyendo::after {
     content: ""; width: 7px; height: 7px; margin-top: -4px;
