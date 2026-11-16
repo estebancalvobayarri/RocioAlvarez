@@ -1,3 +1,10 @@
+/* Tipografías alojadas en la propia web (antes se cargaban desde Google Fonts).
+   Cormorant Garamond y Jost, licencia SIL Open Font License (ver assets/fonts/OFL-*.txt). */
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400 500; font-display: swap; src: url("../assets/fonts/cormorant-garamond.woff") format("woff"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("../assets/fonts/cormorant-garamond-italic.woff") format("woff"); }
+@font-face { font-family: "Jost"; font-style: normal; font-weight: 300 500; font-display: swap; src: url("../assets/fonts/jost.woff") format("woff"); }
+@font-face { font-family: "Jost"; font-style: italic; font-weight: 300; font-display: swap; src: url("../assets/fonts/jost-italic.woff") format("woff"); }
+
 /* Zapatosdecharolconlazo · hoja de estilos
    Tokens del sistema de diseño (manual de marca, edición 2026) */
 
@@ -1181,3 +1188,7 @@ html, body { overflow-anchor: none; }
 .legal a { color: var(--cafe); text-underline-offset: 3px; }
 .legal-fecha { margin-top: var(--s5) !important; font-size: 13px !important; color: var(--topo) !important; }
 .falta { background: #F3E7C9; color: var(--cafe); border: 1px dashed #C9A85C; border-radius: 3px; padding: 0 4px; }
+
+/* Nota bajo el botón del formulario (se envía desde el correo de la persona) */
+.form-nota { margin-top: var(--s2); font-size: 13px; line-height: 20px; color: var(--topo); }
+.form-nota a { color: var(--marron); text-underline-offset: 3px; }
