@@ -1202,3 +1202,8 @@ html, body { overflow-anchor: none; }
 .form-legal { margin: var(--s1) 0 var(--s2); font-size: 12px; line-height: 18px; color: var(--topo); }
 .form-legal strong { font-weight: 500; color: var(--marron); }
 .form-legal a { color: var(--marron); text-underline-offset: 3px; }
+
+/* Enlaces legales del pie en una sola línea */
+.pie-legales { display: block; margin-top: 4px; color: var(--topo); }
+.pie-legales .pie-legal { display: inline; margin-top: 0; color: var(--marron); }
+@media (max-width: 960px) { .pie-legales { margin-top: 6px; } }
