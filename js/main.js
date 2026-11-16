@@ -168,10 +168,12 @@
     });
     function ver(despues) {
       car.classList.toggle('ver-despues', despues);
-      tabs[0].classList.toggle('activa', !despues);
-      tabs[1].classList.toggle('activa', despues);
-      tabs[0].setAttribute('aria-pressed', despues ? 'false' : 'true');
-      tabs[1].setAttribute('aria-pressed', despues ? 'true' : 'false');
+      // las etiquetas «Antes»/«Después» son opcionales (ahora no están en la página)
+      tabs.forEach(function (t) {
+        var activa = (t.getAttribute('data-ver') === 'despues') === despues;
+        t.classList.toggle('activa', activa);
+        t.setAttribute('aria-pressed', activa ? 'true' : 'false');
+      });
     }
     function marcar(i) {
       if (i !== actual) ver(true);    // cada look nuevo empieza en «Después»
