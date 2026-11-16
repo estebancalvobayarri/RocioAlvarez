@@ -1006,3 +1006,30 @@ p { margin: 0; }
 @media (max-width: 960px) {
   .hero-v2 .hero-firma { margin-top: var(--s5); }
 }
+
+/* =========================================================
+   Logotipo de entrada + cabecera que aparece al bajar
+   ========================================================= */
+.intro-logo {
+  background: var(--lino);
+  border-bottom: 1px solid var(--linea);
+  padding: var(--s5) var(--s3) var(--s5);
+  display: flex; flex-direction: column; align-items: center; gap: var(--s2);
+}
+.intro-lazo { width: min(620px, 92%); height: auto; }
+.intro-marca { width: min(500px, 84%); height: auto; }
+
+/* Con JS: la cabecera va fija y escondida hasta pasar el logotipo de entrada */
+.js .site-header {
+  position: fixed; left: 0; right: 0; top: 0;
+  transform: translateY(-100%);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.js .site-header.visible { transform: none; box-shadow: 0 1px 0 var(--linea); }
+@media (prefers-reduced-motion: reduce) { .js .site-header { transition: none; } }
+
+@media (max-width: 560px) {
+  .intro-logo { padding: var(--s4) var(--s2); gap: 12px; }
+  .intro-lazo { width: min(360px, 94%); }
+  .intro-marca { width: min(320px, 86%); }
+}

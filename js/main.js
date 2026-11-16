@@ -242,4 +242,28 @@
     io.observe(f);
   })();
 
+
+  // Cabecera: aparece cuando el logotipo de entrada sale de la pantalla
+  (function () {
+    var header = document.querySelector('.site-header');
+    var intro = document.querySelector('.intro-logo');
+    if (!header || !intro) return;
+    var menuMovil = document.getElementById('menu');
+    var boton = document.querySelector('.menu-toggle');
+    var visible = null;
+    function comprobar() {
+      var v = intro.getBoundingClientRect().bottom < 40;
+      if (v === visible) return;
+      visible = v;
+      header.classList.toggle('visible', v);
+      if (!v && menuMovil && menuMovil.classList.contains('open')) {
+        menuMovil.classList.remove('open');
+        if (boton) boton.setAttribute('aria-expanded', 'false');
+      }
+    }
+    window.addEventListener('scroll', comprobar, { passive: true });
+    window.addEventListener('resize', comprobar);
+    comprobar();
+  })();
+
 })();
