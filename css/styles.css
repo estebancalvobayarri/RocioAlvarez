@@ -1207,3 +1207,14 @@ html, body { overflow-anchor: none; }
 .pie-legales { display: block; margin-top: 4px; color: var(--topo); }
 .pie-legales .pie-legal { display: inline; margin-top: 0; color: var(--marron); }
 @media (max-width: 960px) { .pie-legales { margin-top: 6px; } }
+
+/* Pie: enlaces legales a la derecha, encima del crédito */
+.pie-derecha { justify-self: end; display: flex; flex-direction: column; align-items: flex-end; }
+@media (min-width: 961px) { .footer-inner { padding: var(--s3) 0; } }
+.pie-derecha .pie-legales { margin-top: 0; line-height: 22px; }
+.pie-derecha .pie-credito { margin-top: var(--s2); }
+@media (max-width: 960px) {
+  .pie-derecha { order: 3; align-items: center; margin-top: -10px; }
+  .pie-derecha .pie-legales { margin-top: 0; }
+  .pie-derecha .pie-credito { margin-top: 56px; }
+}
