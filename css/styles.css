@@ -1046,3 +1046,13 @@ html, body { overflow-anchor: none; }
   .hero-v2 .ayuda { order: 4; margin-top: var(--s5); text-align: center; }
   .hero-v2 .hero-firma { order: 5; margin-top: var(--s2); }
 }
+
+/* Móvil: firma centrada y siempre en una línea; la letra se ajusta al ancho de la pantalla
+   (a 13 px mide unas 27 veces su tamaño; 48 px son los márgenes laterales) */
+@media (max-width: 960px) {
+  .hero-v2 .hero-firma {
+    text-align: center; white-space: nowrap;
+    font-size: min(13px, calc((100vw - 48px) / 28));
+    text-indent: 0.22em; /* compensa el espaciado tras la última letra para que quede bien centrada */
+  }
+}
