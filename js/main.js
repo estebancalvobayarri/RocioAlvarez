@@ -243,26 +243,27 @@
   })();
 
 
-  // Cabecera: aparece cuando el logotipo de entrada sale de la pantalla
+  // Cabecera: aparece cuando el logotipo de entrada sale de la pantalla y ya no se esconde.
+  // Al quedarse fija, el logotipo de entrada gana un margen arriba para que la cabecera no lo tape
+  // (se compensa el scroll para que la página no dé un salto).
   (function () {
     var header = document.querySelector('.site-header');
     var intro = document.querySelector('.intro-logo');
     if (!header || !intro) return;
-    var menuMovil = document.getElementById('menu');
-    var boton = document.querySelector('.menu-toggle');
-    var visible = null;
+    var fija = false;
     function comprobar() {
-      var v = intro.getBoundingClientRect().bottom < 40;
-      if (v === visible) return;
-      visible = v;
-      header.classList.toggle('visible', v);
-      if (!v && menuMovil && menuMovil.classList.contains('open')) {
-        menuMovil.classList.remove('open');
-        if (boton) boton.setAttribute('aria-expanded', 'false');
+      if (fija) return;
+      if (intro.getBoundingClientRect().bottom < 40) {
+        fija = true;
+        var antes = intro.offsetHeight;
+        document.documentElement.style.setProperty('--alto-cabecera', header.offsetHeight + 'px');
+        document.documentElement.classList.add('cabecera-fija');
+        window.scrollBy({ top: intro.offsetHeight - antes, behavior: 'instant' });
+        header.classList.add('visible');
+        window.removeEventListener('scroll', comprobar);
       }
     }
     window.addEventListener('scroll', comprobar, { passive: true });
-    window.addEventListener('resize', comprobar);
     comprobar();
   })();
 
