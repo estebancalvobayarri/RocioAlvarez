@@ -1056,3 +1056,38 @@ html, body { overflow-anchor: none; }
     text-indent: 0.22em; /* compensa el espaciado tras la última letra para que quede bien centrada */
   }
 }
+
+/* Estándar: los tres pasos se despliegan (número y título a la vista; el texto, al tocar) */
+#panel-estandar .pasos { align-items: start; }
+.paso-detalle { width: 100%; }
+.paso-detalle summary {
+  list-style: none; cursor: pointer;
+  display: flex; flex-direction: column; gap: var(--s2);
+  -webkit-tap-highlight-color: transparent;
+}
+.paso-detalle summary::-webkit-details-marker { display: none; }
+.paso-detalle .num { display: block; font-family: var(--display); font-size: 44px; line-height: 1; color: var(--marron); }
+.paso-cabeza { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); }
+.paso-cabeza .rotulo { margin: 0; }
+.paso-mas {
+  flex: none; position: relative; width: 28px; height: 28px; border-radius: 50%;
+  border: 1px solid var(--topo); transition: background .25s ease, border-color .25s ease;
+}
+.paso-mas::before, .paso-mas::after {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 1px;
+  background: var(--cafe); transform: translate(-50%, -50%); transition: transform .25s ease, opacity .25s ease;
+}
+.paso-mas::after { transform: translate(-50%, -50%) rotate(90deg); }
+.paso-detalle[open] .paso-mas::after { transform: translate(-50%, -50%) rotate(0deg); opacity: 0; }
+.paso-detalle summary:hover .paso-mas { border-color: var(--cafe); }
+.paso-detalle summary:focus-visible { outline: 2px solid var(--topo); outline-offset: 4px; border-radius: 4px; }
+.paso-cuerpo { display: grid; gap: var(--s2); padding-top: var(--s2); }
+.paso-detalle[open] .paso-cuerpo { animation: paso-abre .3s ease; }
+@keyframes paso-abre { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.paso-cuerpo p:not(.duracion) { font-size: 16px; line-height: 27px; color: var(--marron); }
+@media (prefers-reduced-motion: reduce) { .paso-detalle[open] .paso-cuerpo { animation: none; } }
+
+/* Escritorio: los pasos se ven siempre abiertos, como antes (sin «+» ni cursor de botón) */
+.pasos-fijos .paso-detalle summary { cursor: default; }
+.pasos-fijos .paso-mas { display: none; }
+.pasos-fijos .paso-detalle[open] .paso-cuerpo { animation: none; }
