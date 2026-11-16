@@ -1037,3 +1037,8 @@ p { margin: 0; }
 /* Logotipo de entrada animado: primero el lazo, luego se abren las líneas */
 .intro-logo .intro-anim { width: min(600px, 92%); max-width: none; margin: 0 auto; }
 @media (max-width: 560px) { .intro-logo .intro-anim { width: min(380px, 96%); } }
+
+/* Cuando la cabecera ya se ha quedado fija, el logotipo de entrada deja su hueco arriba */
+.cabecera-fija .intro-logo { padding-top: calc(var(--alto-cabecera, 81px) + var(--s4)); }
+/* La compensación de scroll la hace el JS; así se comporta igual en Chrome y Safari */
+html, body { overflow-anchor: none; }
