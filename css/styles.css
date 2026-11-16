@@ -1157,7 +1157,7 @@ html, body { overflow-anchor: none; }
 
 /* Dibujo de los zapatos de charol en Sobre mí (trazo café sobre transparente) */
 .historia-dibujo { margin: var(--s2) 0; display: flex; justify-content: center; }
-.historia-dibujo img { width: min(440px, 100%); height: auto; }
+.historia-dibujo img { width: min(396px, 100%); height: auto; } /* escritorio: 10 % menos que los 440 px iniciales */
 @media (max-width: 960px) {
   .js .historia-texto.plegado > .historia-dibujo { display: none; }
   .historia-texto.abierto > .historia-dibujo { animation: paso-abre .35s ease; }
