@@ -1167,3 +1167,17 @@ html, body { overflow-anchor: none; }
 /* Lazo de Sobre mí: estático desde el principio (la animación queda solo en el logotipo de entrada) */
 .lazo-anim.lazo-estatico .trazo { animation: none; stroke-dashoffset: 0; }
 .lazo-anim.lazo-estatico .linea { animation: none; transform: none; }
+
+/* Páginas legales (aviso legal y privacidad) */
+.pagina-legal .site-header { position: sticky; top: 0; opacity: 1; visibility: visible; }
+.legal-volver { font-size: 14px; color: var(--marron); text-underline-offset: 4px; white-space: nowrap; }
+.legal { background: var(--lino); }
+.legal-inner { max-width: 760px; }
+.legal .h1 { margin: var(--s2) 0 var(--s4); }
+.legal h2 { font-family: var(--display); font-weight: 500; font-size: 24px; line-height: 1.25; color: var(--cafe); margin: var(--s4) 0 var(--s1); }
+.legal p, .legal li { font-size: 16px; line-height: 27px; color: var(--marron); }
+.legal ul { padding-left: 20px; margin: var(--s1) 0; display: grid; gap: 4px; }
+.legal p + p { margin-top: var(--s1); }
+.legal a { color: var(--cafe); text-underline-offset: 3px; }
+.legal-fecha { margin-top: var(--s5) !important; font-size: 13px !important; color: var(--topo) !important; }
+.falta { background: #F3E7C9; color: var(--cafe); border: 1px dashed #C9A85C; border-radius: 3px; padding: 0 4px; }
