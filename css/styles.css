@@ -1192,3 +1192,13 @@ html, body { overflow-anchor: none; }
 /* Nota bajo el botón del formulario (se envía desde el correo de la persona) */
 .form-nota { margin-top: var(--s2); font-size: 13px; line-height: 20px; color: var(--topo); }
 .form-nota a { color: var(--marron); text-underline-offset: 3px; }
+
+/* Enlace a la política de privacidad en el pie */
+.pie-legal { display: block; margin-top: 4px; color: inherit; text-decoration: underline; text-decoration-color: var(--topo); text-underline-offset: 3px; }
+.pie-legal:hover { color: var(--cafe); }
+@media (max-width: 960px) { .pie-legal { margin-top: 6px; } }
+
+/* Información básica de protección de datos junto al formulario */
+.form-legal { margin: var(--s1) 0 var(--s2); font-size: 12px; line-height: 18px; color: var(--topo); }
+.form-legal strong { font-weight: 500; color: var(--marron); }
+.form-legal a { color: var(--marron); text-underline-offset: 3px; }
