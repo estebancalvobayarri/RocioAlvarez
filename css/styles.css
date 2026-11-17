@@ -1218,3 +1218,14 @@ html, body { overflow-anchor: none; }
   .pie-derecha .pie-legales { margin-top: 0; }
   .pie-derecha .pie-credito { margin-top: 56px; }
 }
+
+/* Frase de portada: en escritorio arriba; en móvil, franja bajo la foto del armario */
+.fp-movil { display: none; }
+@media (max-width: 960px) {
+  .fp-escritorio { display: none; }
+  .hero-v2 .fp-movil {
+    display: block; order: 1;
+    width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);
+    margin-top: var(--s4); padding-left: 24px; padding-right: 24px;
+  }
+}
