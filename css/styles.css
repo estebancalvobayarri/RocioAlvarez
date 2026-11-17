@@ -1164,11 +1164,11 @@ html, body { overflow-anchor: none; }
 
 /* Dibujo de los zapatos de charol en Sobre mí (trazo café sobre transparente) */
 .historia-dibujo { margin: var(--s2) 0; display: flex; justify-content: center; }
-.historia-dibujo img { width: min(297px, 100%); height: auto; } /* escritorio: 396 px − 25 % */
+.historia-dibujo img { width: min(208px, 100%); height: auto; } /* escritorio: 297 px − 30 % */
 @media (max-width: 960px) {
   .js .historia-texto.plegado > .historia-dibujo { display: none; }
   .historia-texto.abierto > .historia-dibujo { animation: paso-abre .35s ease; }
-  .historia-dibujo img { width: min(272px, 70%); } /* móvil: −20 % */
+  .historia-dibujo img { width: min(190px, 49%); } /* móvil: 272 px − 30 % */
 }
 
 /* Lazo de Sobre mí: estático desde el principio (la animación queda solo en el logotipo de entrada) */
