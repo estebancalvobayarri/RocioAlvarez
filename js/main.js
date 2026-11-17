@@ -310,6 +310,16 @@
       var resto = texto.querySelector('.parrafo-resto');
       if (resto) { resto.setAttribute('tabindex', '-1'); resto.focus({ preventScroll: true }); }
     });
+    // «Mostrar menos»: vuelve a plegar y lleva de nuevo al principio del texto
+    var menos = texto.querySelector('.mostrar-menos');
+    if (menos) menos.addEventListener('click', function () {
+      texto.classList.remove('abierto');
+      texto.classList.add('plegado');
+      boton.setAttribute('aria-expanded', 'false');
+      var y = texto.getBoundingClientRect().top + window.pageYOffset - 120;
+      if (texto.getBoundingClientRect().top < 0) window.scrollTo({ top: y, behavior: 'instant' });
+      boton.focus({ preventScroll: true });
+    });
   })();
 
 
