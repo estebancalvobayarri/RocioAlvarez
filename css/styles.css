@@ -1229,3 +1229,18 @@ html, body { overflow-anchor: none; }
     margin-top: var(--s4); padding-left: 24px; padding-right: 24px;
   }
 }
+
+/* Sobre mí (móvil): «Mostrar menos» al final del texto desplegado, a la derecha, como «Seguir leyendo» */
+.mostrar-menos { display: none; }
+@media (max-width: 960px) {
+  .js .historia-texto.abierto .mostrar-menos {
+    display: flex; align-items: center; gap: 10px; justify-self: end; margin-left: auto;
+    font-family: var(--sans); font-style: italic; font-weight: 300; font-size: 15px; line-height: 1.4;
+    letter-spacing: 0.02em; text-transform: none;
+    color: var(--marron); background: none; border: 0; padding: 4px 0; cursor: pointer;
+  }
+  .js .historia-texto.abierto .mostrar-menos::after {
+    content: ""; width: 7px; height: 7px; margin-top: 4px;
+    border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(-135deg);
+  }
+}
