@@ -72,7 +72,7 @@
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
 
-  // Preguntas de la portada: carrusel automático en móvil (cada 3 s)
+  // Preguntas de la portada: carrusel automático en móvil (cada 4 s)
   (function () {
     var lista = document.querySelector('.hero-v2 .preguntas');
     if (!lista) return;
@@ -102,7 +102,7 @@
     }
     function reiniciar() {
       clearInterval(timer);
-      if (movil.matches) timer = setInterval(function () { ir(actual + 1); }, 3000);
+      if (movil.matches) timer = setInterval(function () { ir(actual + 1); }, 4000);
     }
     // deslizar con el dedo
     var x0 = null;

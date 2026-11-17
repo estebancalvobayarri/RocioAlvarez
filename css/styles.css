@@ -669,7 +669,7 @@ p { margin: 0; }
   .hero-v2 .actions { order: 6; }
 }
 
-/* Móvil: las preguntas pasan solas como un carrusel (cada 3 s) */
+/* Móvil: las preguntas pasan solas como un carrusel (cada 4 s) */
 .preguntas-puntos { display: none; }
 @media (max-width: 700px) {
   .hero-v2 .preguntas {
